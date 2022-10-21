@@ -250,17 +250,17 @@
       {%- endif -%}
  
     {%- for block in section.blocks -%}
-              {%- case block.type -%}
-                {%- when 'description' -%}
-                  {%- if product.description != blank -%}
-                    <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
-                      <div class="Rte">
-                        {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
-                      </div>
-                    </div>
-                  {%- endif -%}
-              {%- endcase -%}
-            {%- endfor -%}
+        {%- case block.type -%}
+          {%- when 'description' -%}
+            {%- if product.description != blank -%}
+              <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+                <div class="Rte">
+                  {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
+                </div>
+              </div>
+            {%- endif -%}
+        {%- endcase -%}
+    {%- endfor -%}
 
 
     {%- capture product_aside -%}
