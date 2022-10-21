@@ -71,6 +71,7 @@ ul.SK_Payment_Methods {
   list-style-position: inside;
   list-style-type: none;
 }
+
 .SK_Payment_Methods {
   display: flex;
   justify-content: space-between;
