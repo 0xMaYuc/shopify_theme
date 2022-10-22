@@ -14,12 +14,12 @@
               <span class="Contact__ImageTitle">{{ section.settings.pictext }}</span>
           </div>
           </div>
-          <a class="Button Button--custom" href="{{ section.settings.helplink }}">{{ section.settings.btntext }}</a>
+          <a class="Button Button--primary" href="{{ section.settings.helplink }}">{{ section.settings.btntext }}</a>
       </div>
   </section>
   
   <style>
-    .Section__Contact {
+    .sk_help {
       background: {{ section.settings.background }};
       padding: 50px 0;
     }
@@ -27,7 +27,7 @@
   
   {% schema %}
   {
-    "name": "FW Theme - Help",
+    "name": "SK - Help",
     "settings": [
       {
         "type": "color",
@@ -73,7 +73,7 @@
       }
     ],
     "presets": [{
-      "name": "FW Theme - Help",
+      "name": "SK - Help",
       "category": "Custom"
     }]
   }

@@ -96,33 +96,34 @@ ul.SK_Payment_Methods {
 }
 
 .SK_Payment_Methods {
-  display: flex;
-  justify-content: space-between;
   margin: 0 -8px;
   margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .SK_Payment_Methods svg {
   width: 38px;
   height: auto;
 }
 
-/* SK_ProductForm__ShopProperties */
+/* SK_ShopProperties */
+
 .SK_ProductForm__ShopProperties {
-  margin: 4px -4px;
   display: flex;
   flex-wrap: wrap;
+  margin: 4px -4px;
 }
 .SK_ProductForm__ShopProperty_Container {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 4px;
+  background-color: #fff;
   border-radius: 4px;
+  padding: 8px 4px;
 }
 .SK_ProductForm__ShopProperty {
-  padding: 4px;
   width: 50%;
+  padding: 4px;
 }
 .SK_ProductForm__ShopProperty_Image {
   margin: 0px 10px;
@@ -136,48 +137,50 @@ ul.SK_Payment_Methods {
 
 /* Product Available */
 .ProductForm__Available {
+  border: 1px solid #cfcfcf;
   width: 100%;
+  text-align: center;
   padding-left: 5px;
   margin-left: 10px;
   margin-right: 5px;
-  text-align: center;
   padding-top: 7.5px;
-  border: 1px solid #cfcfcf;
 }
 
 .ProductForm__Available span {
-  padding: 8px;
   font-size: 12px;
   font-weight: bold;
+  padding: 8px;
   letter-spacing: 0.05em;
 }
 
 .ProductForm__Available span:before {
+  margin-right: 12px;
+  border-radius: 50%;
   content: "";
   display: inline-block;
   position: relative;
   top: -1px;
   width: 8px;
   height: 8px;
-  margin-right: 12px;
-  border-radius: 50%;
 }
 
 .ProductForm__Available_pulse {
+  background: #27ae60;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(39 174 96 / 40%);
+  animation: pulse 2s infinite;
+  vertical-align: middle;
   padding-left: 10px;
   margin-top: 0.5px;
   display: inline-block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #27ae60;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgb(39 174 96 / 40%);
-  animation: pulse 2s infinite;
-  vertical-align: middle;
 }
 
 .ProductForm__NotAvailable_pulse {
+  animation: pulseRed 2s infinite;
+  vertical-align: middle;
   margin-left: 10px;
   margin-top: 0.5px;
   display: inline-block;
@@ -187,8 +190,6 @@ ul.SK_Payment_Methods {
   background: var(--product-sale-price-color);
   cursor: pointer;
   box-shadow: 0 0 0 rgb(249 76 67 / 40%);
-  animation: pulseRed 2s infinite;
-  vertical-align: middle;
 }
 
 .ProductForm__Available_pulse:hover,
@@ -198,17 +199,17 @@ ul.SK_Payment_Methods {
 
 /* Discount */
 .sk-discount {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 6px 8px;
-  border-radius: 2px;
   background-color: #29bb8b;
   color: #fff;
   font-size: 13px;
   font-weight: 800;
   line-height: 14px;
   letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 8px;
+  border-radius: 2px;
 }
 
 .sk-discount:after {
@@ -226,11 +227,11 @@ ul.SK_Payment_Methods {
 
 /* SHOP Properties */
 .shopProperties__Wrapper {
+  max-width: 1364px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1364px;
 }
 
 @media screen and (min-width: 1041px) {
@@ -244,12 +245,12 @@ ul.SK_Payment_Methods {
 }
 
 .shopProperty {
-  margin: 14px 0;
   display: flex;
-  width: 50%;
-  height: 48px;
   align-items: center;
   justify-content: center;
+  margin: 14px 0;
+  width: 50%;
+  height: 48px;
 }
 
 .shopProperties__Wrapper:not(.shopProperties__Wrapper--product)
@@ -268,11 +269,11 @@ ul.SK_Payment_Methods {
 
 .shopProperty svg,
 .shopProperty img {
+  margin-right: 14px !important;
+  display: block;
   height: 40px;
   width: 40px;
   max-width: 20px;
-  margin-right: 14px !important;
-  display: block;
 }
 
 .shopProperties__Wrapper:not(.shopProperties__Wrapper--product)
@@ -285,11 +286,11 @@ ul.SK_Payment_Methods {
 }
 
 .shopProperty p {
-  text-align: left;
-  margin: 0;
   font-size: 16px;
   font-weight: lighter;
   line-height: 28px;
+  text-align: left;
+  margin: 0;
 }
 
 .shopProperties__Wrapper .shopProperty h4.Headline {
