@@ -75,6 +75,10 @@
   margin-bottom: 40px;
 }
 
+.sk_help .Contact__ImageTitle {
+  margin-top: 5px;
+}
+
 /* Product Description */
 @media screen and (min-width: 641px) {
   .ProductMeta__Description {
