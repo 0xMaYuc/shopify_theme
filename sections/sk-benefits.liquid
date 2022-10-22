@@ -1,5 +1,9 @@
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="shoebenefit">
   <div class="section-icons">
+
+    <h3 class="Heading">{{section.settings.headline}}</h3>
+    <h5 class="Heading">{{section.settings.subline}}</h5>
+
     <div class="container no-style w-container">
        
         <div class="section-icons__block">
@@ -63,8 +67,8 @@
         </div>
         
         <div class="btn-wrapper center">
-            <a href="/pages/warum-barfussschuhe" class="button-secondary-outline">
-                Mehr Infos <i class="fg-i fg-i-arrow-right btn-icon--right" aria-hidden="true"></i>
+            <a href="{{section.settings.helplink | url}}" class="button button-primary">
+                {{section.settings.btntext}} <i class="fg-i fg-i-arrow-right btn-icon--right" aria-hidden="true"></i>
             </a>
         </div>
         
