@@ -66,14 +66,12 @@
 }
 
 .ReviewSelection__Header h3 {
-  /*text-transform: uppercase;*/
   color: #000;
   font-weight: 400;
   max-width: 640px;
   margin: 0 auto 8px auto;
   font-size: 22px;
   line-height: 40px;
-  /*letter-spacing: 2.7px;*/
 }
 
 .ReviewSelection__reel {
@@ -122,7 +120,7 @@
   }
 
   .ReviewSelection__reel {
-    background-color: #fff;
+    background-color: #efefef;
     padding: 0 24px 20px 24px;
     align-items: flex-start;
     justify-content: center;
