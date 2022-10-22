@@ -55,46 +55,45 @@
 /* SK -CustomerReview */
 
 .sk-customerReview__Wrapper {
-  overflow-x: auto;
   background-color: #f4f4f4;
+  overflow-x: auto;
 }
 
 .sk-customerReview__Header {
-  margin-bottom: 64px;
   display: block;
+  margin-bottom: 64px;
   text-align: center;
 }
 
 .sk-customerReview__Header h3 {
+  margin: 0 auto 8px auto;
+  max-width: 640px;
   color: #000;
   font-weight: 400;
-  max-width: 640px;
-  margin: 0 auto 8px auto;
   font-size: 22px;
   line-height: 40px;
 }
 
 .sk-customerReview__reel {
+  padding: 40px 24px;
   display: inline-flex;
   justify-content: space-between;
-  padding: 40px 24px;
   align-items: flex-start;
 }
 
 .sk-customerReview__review {
-  flex: 1;
+  height: fit-content;
   min-width: 276px;
   max-width: 276px;
   background-color: #fff;
-  height: fit-content;
   text-align: center;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .sk-customerReview__review img {
+  object-fit: cover;
   min-width: 276px;
   height: 272px;
-  object-fit: cover;
 }
 
 .sk-customerReview__review:not(:last-of-type) {
