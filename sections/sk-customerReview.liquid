@@ -1,0 +1,67 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="sk-customerReview">
+    <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">
+        Informationen zur Authentizität von Bewertungen
+    </a>
+  </section>
+  
+  <style>
+    #section-{{ section.id }} {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: -35px;
+    }  
+  </style>
+  
+  {% schema %}
+  {
+    "name": "SK - CustomerReview",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "image_picker",
+        "id": "imagesupport",
+        "label": "Bild",
+        "info": "220 x 150px .jpg recommended"
+      },
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline",
+        "default": "Headline"
+      },
+      {
+        "type": "text",
+        "id": "subline",
+        "label": "Subline",
+        "default": "Subline"
+      },
+      {
+        "type": "text",
+        "id": "pictext",
+        "label": "Text",
+        "default": "Text"
+      },
+      {
+        "type": "text",
+        "id": "btntext",
+        "label": "Button Text",
+        "default": "Text"
+      },
+      {
+        "type": "text",
+        "id": "helplink",
+        "label": "Link URL",
+        "default": "mailto:hallo@fundw.net"
+      }
+    ],
+    "presets": [{
+      "name": "SK - CustomerReview",
+      "category": "Custom"
+    }]
+  }
+  {% endschema %}

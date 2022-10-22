@@ -68,6 +68,38 @@
         "helplink": "\/pages\/contact"
       }
     },
+    "sk-customerReview": {
+        "type": "sk-customerReview",
+        "settings": {
+          "headline": "Produktbewertungen",
+          "subline": "Unsere Kunden haben eine klare Meinung",
+          "img_1": "shopify:\/\/shop_images\/4kg2ESw12_mid.jpg",
+          "review_headline_1": "Gabriel R.",
+          "review_subline_1": "Walk Pro Barfußschuhe",
+          "review_date_1": "21.04.2022",
+          "review_text_1": "Gleich eine 3 stündige Wanderung gemacht. So wenig Probleme hatte ich lange nicht! Der Grip auf unebenen auch steinigen Grund ist gut, man spürt noch gut den Untergrund. Klare Kaufempfehlung!",
+          "img_2": "shopify:\/\/shop_images\/review6.jpg",
+          "review_headline_2": "Gabi B.",
+          "review_subline_2": "Ortho Pro Hausschuhe",
+          "review_date_2": "13.04.2022",
+          "review_text_2": "Die Hausschuhe sind gut verarbeitet und passen gut zu meiner Fußform. Ich habe Rückenprobleme und für mich sind diese Schuhe sehr bequem. Sie sind ein gutes Produkt, das ich auf jeden Fall wieder kaufen werde.",
+          "img_3": "shopify:\/\/shop_images\/Ek3PQSvk3_mid.jpg",
+          "review_headline_3": "Andreas V.",
+          "review_subline_3": "Runner Pro Barfußschuhe",
+          "review_date_3": "05.12.2021",
+          "review_text_3": "Zum Gehen sind die super. Man spürt den Untergrund wie er ist, aber es tut nichts weh. Auch meinem Rücken tuen die Schuhe sehr gut. Die Sohle kann man rausnehmen zum Waschen.",
+          "img_4": "shopify:\/\/shop_images\/review1.jpg",
+          "review_headline_4": "Melanie G.",
+          "review_subline_4": "Ortho Pro Hausschuhe",
+          "review_date_4": "01.11.2021",
+          "review_text_4": "Die Sandalen sind wirklich top. Bin sehr zufrieden. Sie sind bequem für den Hausgebrauch und auch für lange Spaziergänge, sie belasten weder den Rücken noch die Füße und sind sehr bequem.",
+          "img_5": "shopify:\/\/shop_images\/EJp_Nrwkh_mid.jpg",
+          "review_headline_5": "Franz T.",
+          "review_subline_5": "Walk Pro Barfußschuhe",
+          "review_date_5": "03.09.2021",
+          "review_text_5": "Ich hatte vorher nie Barfuß Schuhe, lief jedoch ständig Zuhause barfuß. Ich bekomme in normalen Schuhen auch ständig Blasen. Diese Schuhe haben auf Anhieb gepasst, habe keine einzige Blase bekommen!"
+        }
+      },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -316,6 +348,7 @@
     "timeline",
     "blog-posts",
     "shop-the-look",
-    "sk-help"
+    "sk-help",
+    "sk-customerReview"
   ]
 }
