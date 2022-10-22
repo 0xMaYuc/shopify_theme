@@ -330,15 +330,7 @@
       }
     },
     "sk-benefits": {
-        "type": "sk-benefits",
-        "settings": {
-          "background": "#ffffff",
-          "headline": "Headline",
-          "subline": "Subline",
-          "pictext": "Text",
-          "btntext": "Text",
-          "helplink": "mailto:hallo@fundw.net"
-        }
+        "type": "sk-benefits"
       },
     "sk-help": {
       "type": "sk-help",
