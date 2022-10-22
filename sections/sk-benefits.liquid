@@ -5,13 +5,16 @@
         <div class="section-icons__block">
             
                 
-                <div class="icon-image__block"><img class="section-icons__icon  blur-up lazyloaded" alt="Dünne Sohle icon" data-src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/1_Thin-outsole.jpg?v=1605534553" width="120" height="120" src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/1_Thin-outsole.jpg?v=1605534553"><div class="section-icons__text">
+                <div class="icon-image__block">
+                    <img class="section-icons__icon  blur-up lazyloaded" src="{{ section.settings.imagesupport1 | img_url: 'master' }}" alt="{{ section.settings.imagesupport1 }}" />
+          
+                    
                         <span class="section-icons-heading">
-                            Dünne Sohle
+                            {{section.settings.headline1}}
                         </span>
                         <span class="section-icons-description">
-                            Schenke deinen Füßen ein sensorisches Feedback. Spüre den Boden wie nie zuvor und verbinde dich neu mit deiner Umwelt und der Umgebung.
-                        </span>
+                            {{section.settings.text1}}
+                      </span>
                     </div>
                 </div>
                 
@@ -99,7 +102,7 @@
         "type": "image_picker",
         "id": "imagesupport1",
         "label": "Bild1",
-        "info": "220 x 150px .jpg recommended"
+        "info": "120 x 120px .jpg recommended"
       },
       {
         "type": "text",
