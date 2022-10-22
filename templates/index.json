@@ -56,6 +56,18 @@
         "headline-4": "26.000+ glückliche Kunden"
       }
     },
+    "sk-help": {
+      "type": "sk-help",
+      "settings": {
+        "background": "#ffffff",
+        "imagesupport": "shopify:\/\/shop_images\/supportteam.jpg",
+        "headline": "Wir beantworten Dir gerne jede Frage!",
+        "subline": "Können wir Dir weiterhelfen?",
+        "pictext": "Das Support-Team",
+        "btntext": "Kontakt aufnehmen",
+        "helplink": "\/pages\/contact"
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -303,6 +315,7 @@
     "featured-product",
     "timeline",
     "blog-posts",
-    "shop-the-look"
+    "shop-the-look",
+    "sk-help"
   ]
 }
