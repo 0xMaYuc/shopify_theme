@@ -65,7 +65,7 @@
 }
 .btn-wrapper {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 90px;
 }
 
 .section-icons__icon {
@@ -153,6 +153,46 @@
 }
 .section-icons__text {
   padding-left: 0;
+}
+
+.icon-image__block {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-right: 0;
+  max-width: 280px;
+}
+.icon-image__block.product-teaser__image {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+.icon-image__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.icon-image__block {
+  display: block;
 }
 
 /* SK -CustomerReview */
