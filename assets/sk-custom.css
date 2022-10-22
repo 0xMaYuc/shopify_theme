@@ -65,6 +65,7 @@
 }
 .btn-wrapper {
   text-align: center;
+  margin-top: 25px;
 }
 
 .section-icons__icon {
@@ -128,7 +129,7 @@
 .section-icons .icon-image__block {
   align-items: center;
   display: flex;
-
+  flex-direction: column;
   justify-content: flex-start;
 }
 @media (max-width: 1199px) {
