@@ -1,0 +1,80 @@
+<section class="Section Section__Contact Section--spacingNormal">
+    <div class="FeatureText">
+          <div class="FeatureText__ContentWrapper">
+          <div class="FeatureText__Content"><header class="SectionHeader"><h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subline }}</h3><h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.headline }}</h2></header></div>
+        </div>
+          <div class="Section__ContactImages">
+              <div class="FeatureText__ImageWrapper">
+              <img class=" Image--lazyLoaded" data-src="{{ section.settings.imagesupport | img_url: '300x' }}" alt="Kundensupport" src="{{ section.settings.imagesupport | img_url: '300x' }}">
+  
+              <noscript>
+                  <img src="{{ section.settings.imagesupport | img_url: '300x' }}" alt="Kundensupport">
+              </noscript>
+  
+              <span class="Contact__ImageTitle">{{ section.settings.pictext }}</span>
+          </div>
+          </div>
+          <a class="Button Button--custom" href="{{ section.settings.helplink }}">{{ section.settings.btntext }}</a>
+      </div>
+  </section>
+  
+  <style>
+    .Section__Contact {
+      background: {{ section.settings.background }};
+      padding: 50px 0;
+    }
+  </style>
+  
+  {% schema %}
+  {
+    "name": "FW Theme - Help",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "image_picker",
+        "id": "imagesupport",
+        "label": "Bild",
+        "info": "220 x 150px .jpg recommended"
+      },
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline",
+        "default": "Headline"
+      },
+      {
+        "type": "text",
+        "id": "subline",
+        "label": "Subline",
+        "default": "Subline"
+      },
+      {
+        "type": "text",
+        "id": "pictext",
+        "label": "Text",
+        "default": "Text"
+      },
+      {
+        "type": "text",
+        "id": "btntext",
+        "label": "Button Text",
+        "default": "Text"
+      },
+      {
+        "type": "text",
+        "id": "helplink",
+        "label": "Link URL",
+        "default": "mailto:hallo@fundw.net"
+      }
+    ],
+    "presets": [{
+      "name": "FW Theme - Help",
+      "category": "Custom"
+    }]
+  }
+  {% endschema %}

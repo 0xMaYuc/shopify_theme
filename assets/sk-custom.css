@@ -52,6 +52,37 @@
   }
 }
 
+/* Contact - Help */
+
+.Section__Contact .Section__ContactImages {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto 40px;
+}
+
+/*.Section__Contact .FeatureText__ImageWrapper:last-child {
+  margin-right: 24px;
+  margin-left: 8px;
+}
+.Section__Contact .FeatureText__ImageWrapper:first-child {
+  margin-left: 24px;
+  margin-right: 8px;
+}*/
+.Section__Contact .FeatureText__ImageWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 16px;
+  background: #fafafa;
+  box-shadow: 0 5px 15px #00000026;
+}
+
+.Section__Contact .FeatureText__ContentWrapper {
+  margin-bottom: 40px;
+}
+
 /* Product Description */
 @media screen and (min-width: 641px) {
   .ProductMeta__Description {
