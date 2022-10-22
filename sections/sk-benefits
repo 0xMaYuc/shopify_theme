@@ -1,0 +1,124 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="shoebenefit">
+  <div class="section-icons">
+    <div class="container no-style w-container">
+       
+        <div class="section-icons__block">
+            
+                
+                <div class="icon-image__block"><img class="section-icons__icon  blur-up lazyloaded" alt="Dünne Sohle icon" data-src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/1_Thin-outsole.jpg?v=1605534553" width="120" height="120" src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/1_Thin-outsole.jpg?v=1605534553"><div class="section-icons__text">
+                        <span class="section-icons-heading">
+                            Dünne Sohle
+                        </span>
+                        <span class="section-icons-description">
+                            Schenke deinen Füßen ein sensorisches Feedback. Spüre den Boden wie nie zuvor und verbinde dich neu mit deiner Umwelt und der Umgebung.
+                        </span>
+                    </div>
+                </div>
+                
+            
+                
+                <div class="icon-image__block"><img class="section-icons__icon  blur-up lazyloaded" alt="Breite Zehenbox icon" data-src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/2_Wide-toe-box.jpg?v=1605534552" width="120" height="120" src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/2_Wide-toe-box.jpg?v=1605534552"><div class="section-icons__text">
+                        <span class="section-icons-heading">
+                            Breite Zehenbox
+                        </span>
+                        <span class="section-icons-description">
+                            Gönn deinen Zehen ihre dringend benötigte Freiheit und erlaube ihnen, sich in ihre natürliche Position zu entfalten. Zehkomfort den du noch nie erlebt hast.
+                        </span>
+                    </div>
+                </div>
+                
+            
+                
+                <div class="icon-image__block"><img class="section-icons__icon  blur-up lazyloaded" alt="Nullabsatz icon" data-src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/3_zero-drop.jpg?v=1605534549" width="120" height="120" src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/3_zero-drop.jpg?v=1605534549"><div class="section-icons__text">
+                        <span class="section-icons-heading">
+                            Nullabsatz
+                        </span>
+                        <span class="section-icons-description">
+                            Die flache Sohle ist die beste Grundlage für eine aufrechte Haltung und hilft Knie-, Hüft- und Rückenschmerzen zu vermeiden und zu lindern.
+                        </span>
+                    </div>
+                </div>
+                
+            
+                
+                <div class="icon-image__block"><img class="section-icons__icon  blur-up lazyloaded" alt="Flexibel icon" data-src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/4_flexible.jpg?v=1605534547" width="120" height="120" src="https://cdn.shopify.com/s/files/1/0461/2862/7877/files/4_flexible.jpg?v=1605534547"><div class="section-icons__text">
+                        <span class="section-icons-heading">
+                            Flexibel
+                        </span>
+                        <span class="section-icons-description">
+                            Eine weiche und flexible Sohle bedingt einen uneingeschränkten Bewegungsradius, was für einen natürlichen Gang unerlässlich ist.
+                        </span>
+                    </div>
+                </div>
+                
+            
+        </div>
+        
+        <div class="btn-wrapper center">
+            <a href="/pages/warum-barfussschuhe" class="button-secondary-outline">
+                Mehr Infos <i class="fg-i fg-i-arrow-right btn-icon--right" aria-hidden="true"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<style>
+
+</style>
+
+
+{% schema %}
+{
+  "name": "SK - Benefit",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+	{
+      "type": "image_picker",
+      "id": "imagesupport",
+      "label": "Bild",
+      "info": "220 x 150px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Headline"
+    },
+	{
+      "type": "text",
+      "id": "subline",
+      "label": "Subline",
+      "default": "Subline"
+    },
+	{
+      "type": "text",
+      "id": "pictext",
+      "label": "Text",
+      "default": "Text"
+    },
+	{
+      "type": "text",
+      "id": "btntext",
+      "label": "Button Text",
+      "default": "Text"
+    },
+	{
+      "type": "text",
+      "id": "helplink",
+      "label": "Link URL",
+      "default": "mailto:hallo@fundw.net"
+    }
+  ],
+  "presets": [{
+    "name": "FW Theme - Shoe Benefit",
+    "category": "Custom"
+  }]
+}
+{% endschema %}

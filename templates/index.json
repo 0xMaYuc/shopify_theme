@@ -327,6 +327,17 @@
         "review_text_5": "Ich hatte vorher nie Barfuß Schuhe, lief jedoch ständig Zuhause barfuß. Ich bekomme in normalen Schuhen auch ständig Blasen. Diese Schuhe haben auf Anhieb gepasst, habe keine einzige Blase bekommen!"
       }
     },
+    "sk-benefits": {
+        "type": "sk-benefits",
+        "settings": {
+          "background": "#ffffff",
+          "headline": "Headline",
+          "subline": "Subline",
+          "pictext": "Text",
+          "btntext": "Text",
+          "helplink": "mailto:hallo@fundw.net"
+        }
+      },
     "sk-help": {
       "type": "sk-help",
       "settings": {
@@ -348,6 +359,7 @@
     "timeline",
     "blog-posts",
     "shop-the-look",
+    "sk-benefits",
     "sk-customerReview",
     "sk-help"
   ]
