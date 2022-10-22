@@ -1,67 +1,275 @@
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="sk-customerReview">
-    <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">
-        Informationen zur Authentizität von Bewertungen
-    </a>
-  </section>
-  
-  <style>
-    #section-{{ section.id }} {
-      text-align: center;
-      margin-top: 25px;
-      margin-bottom: -35px;
-    }  
-  </style>
-  
-  {% schema %}
-  {
-    "name": "SK - CustomerReview",
-    "settings": [
-      {
-        "type": "color",
-        "id": "background",
-        "label": "Background Color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "image_picker",
-        "id": "imagesupport",
-        "label": "Bild",
-        "info": "220 x 150px .jpg recommended"
-      },
-      {
-        "type": "text",
-        "id": "headline",
-        "label": "Headline",
-        "default": "Headline"
-      },
-      {
-        "type": "text",
-        "id": "subline",
-        "label": "Subline",
-        "default": "Subline"
-      },
-      {
-        "type": "text",
-        "id": "pictext",
-        "label": "Text",
-        "default": "Text"
-      },
-      {
-        "type": "text",
-        "id": "btntext",
-        "label": "Button Text",
-        "default": "Text"
-      },
-      {
-        "type": "text",
-        "id": "helplink",
-        "label": "Link URL",
-        "default": "mailto:hallo@fundw.net"
-      }
-    ],
-    "presets": [{
-      "name": "SK - CustomerReview",
-      "category": "Custom"
-    }]
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="review-selection">
+  <div class="ReviewSelection">
+    <div class="Container">
+      <div class="ReviewSelection__Header">
+        <h3 class="Heading">{{ section.settings.headline }}</h3>
+        <h5 class="Heading">{{ section.settings.subline }}</h5>
+        <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">Informationen zur Authentizität von Bewertungen</a>
+      </div>
+    </div>
+    <div class="ReviewSelection__Wrapper">
+        <div class="ReviewSelection__reel">
+          <div class="ReviewSelection__review">
+            <img src="{{ section.settings.img_1 | img_url: 'master' }}" alt="{{ section.settings.img_1 }}" />
+            <div class="ReviewSelection__review-content">
+              <h4 class="Heading">{{ section.settings.review_headline_1 }}</h4>
+              <h5 class="Heading">{{ section.settings.review_subline_1 }}</h5>
+              <span class="date">{{ section.settings.review_date_1 }}</span>
+              <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+              </span>
+              <p>{{ section.settings.review_text_1 }}</p>
+            </div>
+          </div>
+
+          <div class="ReviewSelection__review">
+            <img src="{{ section.settings.img_2 | img_url: 'master' }}" alt="{{ section.settings.img_2 }}" />
+            <div class="ReviewSelection__review-content">
+              <h4 class="Heading">{{ section.settings.review_headline_2 }}</h4>
+              <h5 class="Heading">{{ section.settings.review_subline_2 }}</h5>
+              <span class="date">{{ section.settings.review_date_2 }}</span>
+              <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+              </span>
+              <p>{{ section.settings.review_text_2 }}</p>
+            </div>
+          </div>
+
+          <div class="ReviewSelection__review">
+            <img src="{{ section.settings.img_3 | img_url: 'master' }}" alt="{{ section.settings.img_3 }}" />
+            <div class="ReviewSelection__review-content">
+              <h4 class="Heading">{{ section.settings.review_headline_3 }}</h4>
+              <h5 class="Heading">{{ section.settings.review_subline_3 }}</h5>
+              <span class="date">{{ section.settings.review_date_3 }}</span>
+              <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.29"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-half-alt" data-name="Icon awesome-star-half-alt" class="cls-1" d="M15.18,5.12l-4.37-.64L8.86.53A1,1,0,0,0,7.57.1a1,1,0,0,0-.43.43l-1.95,4L.82,5.12A1,1,0,0,0,0,6.2a.94.94,0,0,0,.28.55L3.45,9.83,2.7,14.17a1,1,0,0,0,.79,1.1l.16,0a1,1,0,0,0,.44-.11L8,13.12l3.91,2.06a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.61l-.75-4.34,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28ZM11.55,8.8,11,9.33l.13.74.58,3.39-3.05-1.6L8,11.51V2L9.53,5.12l.33.68.75.11L14,6.4Z"/></g></g></svg>
+              </span>
+              <p>{{ section.settings.review_text_3 }}</p>
+            </div>
+          </div>
+
+          <div class="ReviewSelection__review">
+            <img src="{{ section.settings.img_4 | img_url: 'master' }}" alt="{{ section.settings.img_4 }}" />
+            <div class="ReviewSelection__review-content">
+              <h4 class="Heading">{{ section.settings.review_headline_4 }}</h4>
+              <h5 class="Heading">{{ section.settings.review_subline_4 }}</h5>
+              <span class="date">{{ section.settings.review_date_4 }}</span>
+              <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+              </span>
+              <p>{{ section.settings.review_text_4 }}</p>
+            </div>
+          </div>
+
+          <div class="ReviewSelection__review">
+            <img src="{{ section.settings.img_5 | img_url: 'master' }}" alt="{{ section.settings.img_5 }}" />
+            <div class="ReviewSelection__review-content">
+              <h4 class="Heading">{{ section.settings.review_headline_5 }}</h4>
+              <h5 class="Heading">{{ section.settings.review_subline_5 }}</h5>
+              <span class="date">{{ section.settings.review_date_5 }}</span>
+              <span class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.32"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_awesome-star-2" data-name="Icon awesome-star-2" class="cls-1" d="M7.14.54l-1.95,4L.82,5.14A1,1,0,0,0,0,6.22a1,1,0,0,0,.28.55L3.45,9.85,2.7,14.2a1,1,0,0,0,.79,1.11,1,1,0,0,0,.6-.1L8,13.16l3.91,2.05a1,1,0,0,0,1.29-.4,1,1,0,0,0,.1-.6l-.75-4.36,3.16-3.08a1,1,0,0,0,0-1.35,1,1,0,0,0-.55-.28L10.81,4.5l-2-4A1,1,0,0,0,7.58.1.94.94,0,0,0,7.14.54Z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.36"><defs><style>.cls-1{fill:#fbbf0a;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><g id="Icon_awesome-star" data-name="Icon awesome-star"><path class="cls-1" d="M12.1,15.36a1.43,1.43,0,0,1-.64-.15L8,13.39,4.54,15.2a1.37,1.37,0,0,1-2-1.44l.66-3.85L.41,7.18A1.47,1.47,0,0,1,0,6.4,1.39,1.39,0,0,1,1.17,4.84L5,4.28,6.77.77a1.37,1.37,0,0,1,2.46,0L11,4.28l3.87.56a1.4,1.4,0,0,1,.78.4,1.33,1.33,0,0,1,.39,1,1.35,1.35,0,0,1-.42,1L12.79,9.91l.66,3.85a1.38,1.38,0,0,1-.14.87,1.36,1.36,0,0,1-.8.67A1.51,1.51,0,0,1,12.1,15.36Zm-4.1-3,3.9,2a.38.38,0,0,0,.33,0,.4.4,0,0,0,.25-.21.42.42,0,0,0,0-.27l-.74-4.34,3.15-3.07a.44.44,0,0,0,.13-.31.42.42,0,0,0-.12-.3.44.44,0,0,0-.25-.13l-4.36-.64L8.39,1.19A.44.44,0,0,0,7.81,1a.48.48,0,0,0-.2.2h0l-1.94,4-4.36.63A.42.42,0,0,0,1,6.26a.37.37,0,0,0,.12.24L4.22,9.58l-.74,4.34a.43.43,0,0,0,.35.49.42.42,0,0,0,.27,0Z"/></g></g></g></svg>
+              </span>
+              <p>{{ section.settings.review_text_5 }}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #section-{{ section.id }} {
+    color: {{ section.settings.text_color }};
   }
-  {% endschema %}
+
+</style>
+
+{% schema %}
+{
+  "name": "SK - Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Ich bin eine Headline und beschreibe das Bild"
+    },
+    {
+      "type": "text",
+      "id": "subline",
+      "label": "Subline",
+      "default": "Unsere Kunden haben eine klare Meinung über uns!"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_1",
+      "label": "Image #1"
+    },
+    {
+      "type": "text",
+      "id": "review_headline_1",
+      "label": "Review Headline #1",
+      "default": "Qualität"
+    },
+    {
+      "type": "text",
+      "id": "review_subline_1",
+      "label": "Review Subline #1",
+      "default": "Matterhorn Keyholder"
+    },
+    {
+      "type": "text",
+      "id": "review_date_1",
+      "label": "Review Date #1",
+      "default": "22.10.1991"
+    },
+    {
+      "type": "text",
+      "id": "review_text_1",
+      "label": "Review Text #1",
+      "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+    },
+    {
+      "type": "image_picker",
+      "id": "img_2",
+      "label": "Image #2"
+    },
+    {
+    "type": "text",
+    "id": "review_headline_2",
+    "label": "Review Headline #2",
+    "default": "Qualität"
+    },
+    {
+      "type": "text",
+      "id": "review_subline_2",
+      "label": "Review Subline #2",
+      "default": "Matterhorn Keyholder"
+    },
+    {
+    "type": "text",
+    "id": "review_date_2",
+    "label": "Review Date #2",
+    "default": "22.20.2992"
+    },
+    {
+    "type": "text",
+    "id": "review_text_2",
+    "label": "Review Text #2",
+    "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+    },
+    {
+      "type": "image_picker",
+      "id": "img_3",
+      "label": "Image #3"
+    },
+    {
+    "type": "text",
+    "id": "review_headline_3",
+    "label": "Review Headline #3",
+    "default": "Qualität"
+    },
+    {
+      "type": "text",
+      "id": "review_subline_3",
+      "label": "Review Subline #3",
+      "default": "Matterhorn Keyholder"
+    },
+    {
+    "type": "text",
+    "id": "review_date_3",
+    "label": "Review Date #3",
+    "default": "22.30.3993"
+    },
+    {
+    "type": "text",
+    "id": "review_text_3",
+    "label": "Review Text #3",
+    "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+    },
+    {
+      "type": "image_picker",
+      "id": "img_4",
+      "label": "Image #4"
+    },
+    {
+      "type": "text",
+      "id": "review_headline_4",
+      "label": "Review Headline #4",
+      "default": "Qualität"
+    },
+    {
+      "type": "text",
+      "id": "review_subline_4",
+      "label": "Review Subline #4",
+      "default": "Matterhorn Keyholder"
+    },
+    {
+      "type": "text",
+      "id": "review_date_4",
+      "label": "Review Date #4",
+      "default": "22.40.4994"
+    },
+    {
+      "type": "text",
+      "id": "review_text_4",
+      "label": "Review Text #4",
+      "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+    },
+    {
+      "type": "image_picker",
+      "id": "img_5",
+      "label": "Image #5"
+    },
+    {
+      "type": "text",
+      "id": "review_headline_5",
+      "label": "Review Headline #5",
+      "default": "Qualität"
+    },
+    {
+      "type": "text",
+      "id": "review_subline_5",
+      "label": "Review Subline #5",
+      "default": "Matterhorn Keyholder"
+    },
+    {
+      "type": "text",
+      "id": "review_date_5",
+      "label": "Review Date #5",
+      "default": "22.50.5995"
+    },
+    {
+      "type": "text",
+      "id": "review_text_5",
+      "label": "Review Text #5",
+      "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+    }
+  ],
+  "presets": [{
+    "name": "SK - Reviews",
+    "category": "Custom"
+  }]
+}
+{% endschema %}
