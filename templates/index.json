@@ -58,9 +58,9 @@
         "settings": {
           "background": "#ffffff",
           "imagesupport": "shopify:\/\/shop_images\/supportteam.jpg",
-          "headline": "Wir helfen dir gerne!",
-          "subline": "Hast du eine Frage?",
-          "pictext": "Unser Support-Team",
+          "headline": "Wir beantworten Dir gerne jede Frage!",
+          "subline": "Können wir Dir weiterhelfen?",
+          "pictext": "Das Support-Team",
           "btntext": "Kontakt aufnehmen",
           "helplink": "\/pages\/contact"
         }

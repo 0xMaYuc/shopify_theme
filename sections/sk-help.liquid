@@ -1,17 +1,22 @@
-<section class="Section Section__Contact Section--spacingNormal">
-    <div class="FeatureText">
-          <div class="FeatureText__ContentWrapper">
-          <div class="FeatureText__Content"><header class="SectionHeader"><h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subline }}</h3><h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.headline }}</h2></header></div>
+<section class="Section sk_help Section--spacingNormal">
+    <div class="sk_helpText">
+          <div class="sk_helpText__ContentWrapper">
+            <div class="sk_helpText__Content">
+                <header class="SectionHeader">
+                    <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subline }}</h3>
+                    <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.headline }}</h2>
+                </header>
+            </div>
         </div>
-          <div class="Section__ContactImages">
-              <div class="FeatureText__ImageWrapper">
+          <div class="sk_helpImages">
+              <div class="sk_helpText__ImageWrapper">
               <img class=" Image--lazyLoaded" data-src="{{ section.settings.imagesupport | img_url: '300x' }}" alt="Kundensupport" src="{{ section.settings.imagesupport | img_url: '300x' }}">
   
               <noscript>
                   <img src="{{ section.settings.imagesupport | img_url: '300x' }}" alt="Kundensupport">
               </noscript>
   
-              <span class="Contact__ImageTitle">{{ section.settings.pictext }}</span>
+              <span class="sk_helpImageTitle">{{ section.settings.pictext }}</span>
           </div>
           </div>
           <a class="Button Button--custom" href="{{ section.settings.helplink }}">{{ section.settings.btntext }}</a>

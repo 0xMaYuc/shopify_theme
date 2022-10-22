@@ -54,7 +54,7 @@
 
 /* Contact - Help */
 
-.Section__Contact .Section__ContactImages {
+.sk_help .sk_helpImages {
   max-width: 500px;
   display: flex;
   justify-content: center;
@@ -62,15 +62,7 @@
   margin: 0 auto 40px;
 }
 
-/*.Section__Contact .FeatureText__ImageWrapper:last-child {
-  margin-right: 24px;
-  margin-left: 8px;
-}
-.Section__Contact .FeatureText__ImageWrapper:first-child {
-  margin-left: 24px;
-  margin-right: 8px;
-}*/
-.Section__Contact .FeatureText__ImageWrapper {
+.sk_help .sk_helpText__ImageWrapper {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -79,7 +71,7 @@
   box-shadow: 0 5px 15px #00000026;
 }
 
-.Section__Contact .FeatureText__ContentWrapper {
+.sk_help .sk_helpText__ContentWrapper {
   margin-bottom: 40px;
 }
 
