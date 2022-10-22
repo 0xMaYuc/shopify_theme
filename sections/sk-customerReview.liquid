@@ -4,7 +4,9 @@
       <div class="ReviewSelection__Header">
         <h3 class="Heading">{{ section.settings.headline }}</h3>
         <h5 class="Heading">{{ section.settings.subline }}</h5>
-        <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">Informationen zur Authentizität von Bewertungen</a>
+        <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">
+          {{ section.settings.subline2 }}
+        </a>
       </div>
     </div>
     <div class="ReviewSelection__Wrapper">
@@ -120,6 +122,12 @@
       "id": "subline",
       "label": "Subline",
       "default": "Unsere Kunden haben eine klare Meinung über uns!"
+    },
+    {
+      "type": "text",
+      "id": "subline2",
+      "label": "Subline2",
+      "default": "Informationen zur Authentizität von Bewertungen"
     },
     {
       "type": "image_picker",
