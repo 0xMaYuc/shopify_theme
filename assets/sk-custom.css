@@ -52,6 +52,127 @@
   }
 }
 
+/* SK -CustomerReview */
+
+.ReviewSelection__Wrapper {
+  overflow-x: auto;
+  background-color: #f4f4f4;
+}
+
+.ReviewSelection__Header {
+  margin-bottom: 64px;
+  display: block;
+  text-align: center;
+}
+
+.ReviewSelection__Header h3 {
+  /*text-transform: uppercase;*/
+  color: #000;
+  font-weight: 400;
+  max-width: 640px;
+  margin: 0 auto 8px auto;
+  font-size: 22px;
+  line-height: 40px;
+  /*letter-spacing: 2.7px;*/
+}
+
+.ReviewSelection__reel {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 40px 24px;
+  align-items: flex-start;
+}
+
+.ReviewSelection__review {
+  min-width: 276px;
+  max-width: 276px;
+  background-color: #fff;
+  height: fit-content;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.ReviewSelection__review img {
+  min-width: 276px;
+  height: 272px;
+  object-fit: cover;
+  /* display: none; */
+}
+
+.ReviewSelection__review:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .ReviewSelection__review img {
+    display: block;
+  }
+
+  .ReviewSelection__review {
+    text-align: left;
+  }
+
+  .ReviewSelection__review:not(:last-of-type) {
+    margin-right: 64px;
+  }
+
+  .ReviewSelection__Wrapper {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .ReviewSelection__reel {
+    background-color: #fff;
+    padding: 0 24px 20px 24px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .ReviewSelection__Header h3 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 4.8px;
+  }
+}
+
+.ReviewSelection__review img {
+  object-fit: cover;
+}
+.ReviewSelection__review-content {
+  padding: 24px;
+}
+.ReviewSelection__review-content h4 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.ReviewSelection__review-content h5 {
+  margin-bottom: 8px;
+  letter-spacing: 0 !important;
+  text-transform: capitalize !important;
+}
+
+.ReviewSelection__review-content span.date {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ReviewSelection__review-content span.stars {
+  display: block;
+}
+.ReviewSelection__review-content span.stars svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
 /* Contact - Help */
 
 .sk_help .Section__ContactImages {
