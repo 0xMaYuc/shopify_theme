@@ -298,6 +298,19 @@
         "show_mobile_product_info": false
       }
     },
+    "sk-benefits": {
+      "type": "sk-benefits",
+      "settings": {
+        "background": "#ffffff",
+        "headline": "Our Benefits",
+        "subline": "Subheadline",
+        "pictext": "Text",
+        "headline1": "Headline1",
+        "text1": "text1",
+        "btntext": "Mehr Infos",
+        "helplink": "http:\/\/www.google.de"
+      }
+    },
     "sk-customerReview": {
       "type": "sk-customerReview",
       "settings": {
@@ -329,9 +342,6 @@
         "review_text_5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
       }
     },
-    "sk-benefits": {
-        "type": "sk-benefits"
-      },
     "sk-help": {
       "type": "sk-help",
       "settings": {
@@ -344,7 +354,6 @@
       }
     }
   },
-  
   "order": [
     "slideshow",
     "sk-shopProperties",
