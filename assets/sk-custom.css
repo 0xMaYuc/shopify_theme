@@ -82,6 +82,7 @@
 }
 
 .sk-customerReview__review {
+  flex: 1;
   min-width: 276px;
   max-width: 276px;
   background-color: #fff;
