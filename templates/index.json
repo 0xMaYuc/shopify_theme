@@ -30,7 +30,10 @@
           }
         }
       },
-      "block_order": ["slide-0", "slide-1"],
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
       "settings": {
         "show_fullscreen": true,
         "show_arrow": false,
@@ -53,18 +56,6 @@
         "headline-4": "26.000+ glückliche Kunden"
       }
     },
-    "sk-help": {
-        "type": "sk-help",
-        "settings": {
-          "background": "#ffffff",
-          "imagesupport": "shopify:\/\/shop_images\/supportteam.jpg",
-          "headline": "Wir beantworten Dir gerne jede Frage!",
-          "subline": "Können wir Dir weiterhelfen?",
-          "pictext": "Das Support-Team",
-          "btntext": "Kontakt aufnehmen",
-          "helplink": "\/pages\/contact"
-        }
-      },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -78,7 +69,9 @@
           }
         }
       },
-      "block_order": ["featured-collection-0"],
+      "block_order": [
+        "featured-collection-0"
+      ],
       "settings": {
         "title": "Featured collection",
         "layout_mode": "grid",
@@ -132,7 +125,11 @@
           }
         }
       },
-      "block_order": ["collection-0", "collection-1", "collection-2"],
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2"
+      ],
       "settings": {
         "image_size": "normal",
         "add_spacing": true,
@@ -154,7 +151,11 @@
             "show_taxes_included": false
           }
         },
-        "share-buttons": { "type": "share_buttons", "settings": {} },
+        "share-buttons": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
         "variant-selector": {
           "type": "variant_selector",
           "settings": {
@@ -195,7 +196,7 @@
             "title": "2000",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
           }
         },
         "item-1": {
@@ -205,7 +206,7 @@
             "title": "2001",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
           }
         },
         "item-2": {
@@ -215,19 +216,32 @@
             "title": "2002",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
           }
         }
       },
-      "block_order": ["item-0", "item-1", "item-2"],
-      "settings": { "text_color": "#ffffff" }
+      "block_order": [
+        "item-0",
+        "item-1",
+        "item-2"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
     },
     "blog-posts": {
       "type": "blog-posts",
       "blocks": {
-        "blog-0": { "type": "blog", "settings": { "blog": "news" } }
+        "blog-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        }
       },
-      "block_order": ["blog-0"],
+      "block_order": [
+        "blog-0"
+      ],
       "settings": {
         "subheading": "",
         "title": "Featured article",
@@ -270,7 +284,10 @@
           }
         }
       },
-      "block_order": ["look-0", "look-1"],
+      "block_order": [
+        "look-0",
+        "look-1"
+      ],
       "settings": {
         "subheading": "Shop",
         "title": "Our looks",
@@ -286,7 +303,6 @@
     "featured-product",
     "timeline",
     "blog-posts",
-    "shop-the-look",
-    "sk-help"
+    "shop-the-look"
   ]
 }
