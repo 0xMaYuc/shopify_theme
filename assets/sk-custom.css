@@ -54,7 +54,7 @@
 
 /* SK - FAQ */
 
-.sk-faq {
+.faq {
   margin-top: 40px;
   max-width: 680px;
   margin-left: auto;
@@ -63,7 +63,7 @@
   padding: 0 24px;
 }
 
-.sk-faq .page-title {
+.faq .page-title {
   text-align: center;
   margin-bottom: 25px;
   font-size: 22px;
@@ -74,7 +74,7 @@
   transition: color 0.2s ease-in-out;
 }
 
-.sk-faq-section--title-wrapper {
+.faq-section--title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,12 +82,12 @@
   border-bottom: 1px solid #cdd5d9;
 }
 
-.sk-faq-section--title-wrapper svg {
+.faq-section--title-wrapper svg {
   width: 50px;
   fill: #00b388;
 }
 
-.sk-faq-section--title {
+.faq-section--title {
   position: relative;
   width: 100%;
   padding-left: 0px;
@@ -98,11 +98,11 @@
   cursor: pointer;
 }
 
-.sk-faq-section > ul {
+.faq-section > ul {
   display: none;
 }
 
-.sk-faq-section.open > ul {
+.faq-section.open > ul {
   display: block;
   cursor: pointer;
   padding-left: 0;
@@ -111,12 +111,12 @@
   transition: transform 0.4s;
 }
 
-.sk-faq-section > ul li {
+.faq-section > ul li {
   position: relative;
   width: 100%;
 }
 
-.sk-faq-section--item-title {
+.faq-section--item-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,54 +126,53 @@
   font-size: 14px;
 }
 
-.sk-faq-section--item-title:hover {
+.faq-section--item-title:hover {
   color: #00b388;
 }
 
-.sk-faq-section--item-title svg {
+.faq-section--item-title svg {
   width: 20px;
   height: 15px;
 }
 
-.sk-faq-section--item-desc {
+.faq-section--item-desc {
   padding-bottom: 20px;
   line-height: 20px;
 }
 
-.sk-faq-section--item-desc h3 {
+.faq-section--item-desc h3 {
   line-height: 30px;
 }
 
-.sk-faq-section--item-desc table,
-.sk-faq-section--item-desc table td {
+.faq-section--item-desc table,
+.faq-section--item-desc table td {
   border: 1px solid #adc6dd;
 }
 
-.sk-faq-section > ul li .faq-section--item-desc {
+.faq-section > ul li .faq-section--item-desc {
   display: none;
 }
 
-.sk-faq-section > ul > li.open .faq-section--item-title svg {
+.faq-section > ul > li.open .faq-section--item-title svg {
   transform: rotate(180deg);
   transition: transform 0.4s;
 }
 
-.sk-faq-section > ul li.open .faq-section--item-desc {
+.faq-section > ul li.open .faq-section--item-desc {
   display: block;
 }
 
-.sk-faq-section ul li + li {
+.faq-section ul li + li {
   border-top: 1px solid #cdd5d9;
 }
 
-.sk-faq-section ul {
+.faq-section ul {
   list-style: none;
 }
 
-.sk-faq-section--item-desc.close {
+.faq-section--item-desc.close {
   display: none;
 }
-
 /* SK - Benefits */
 
 .section-icons h3 {
