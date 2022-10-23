@@ -355,6 +355,22 @@
     "sk-faq": {
       "type": "sk-faq",
       "settings": {
+        "background": "#efefef",
+        "headline": "Eure Fragen, unsere Antworten:",
+        "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
+        "faqHeadline": "Die 5 kritischsten Fragen",
+        "Frage1": "Frage 1",
+        "Antwort1": "Antwort1",
+        "Frage2": "Frage 2",
+        "Antwort2": "Antwort 2",
+        "Frage3": "Frage 3",
+        "Antwort3": "Antwort 3",
+        "Frage4": "Frage 4",
+        "Antwort4": "Antwort 4",
+        "Frage5": "Frage 5",
+        "Antwort5": "Antwort 5",
+        "btntext": "Weitere Fragen anzeigen",
+        "btnlink": "\/pages\/contact"
       }
     },
     "sk-help": {
