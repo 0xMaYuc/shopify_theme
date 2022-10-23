@@ -365,7 +365,15 @@
     }
   },
   "sk-faq": {
-    "type": "sk-faq"
+    "type": "sk-faq",
+    "settings": {
+      "background": "#efefef",
+      "headline": "Eure Fragen, unsere Antworten:",
+      "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
+      "faqHeadline": "Die 5 kritischsten Fragen",
+      "Frage1": "Frage 1",
+      "Antwort1": "Antwort1"
+    }
   },
   "order": [
     "slideshow",
