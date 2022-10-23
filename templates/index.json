@@ -364,6 +364,9 @@
       }
     }
   },
+  "sk-faq": {
+    "type": "sk-faq"
+  },
   "order": [
     "slideshow",
     "sk-shopProperties",
@@ -375,6 +378,7 @@
     "shop-the-look",
     "sk-benefits",
     "sk-customerReview",
-    "sk-help"
+    "sk-help",
+    "sk-faq"
   ]
 }
