@@ -361,11 +361,9 @@
       "type": "sk-help",
       "settings": {
         "background": "#efefef",
-        "headline": "Wir beantworten Dir jede Frage!",
-        "subline": "Können wir Dir weiterhelfen?",
-        "pictext": "Das Support-Team",
-        "btntext": "Kontakt aufnehmen",
-        "helplink": "\/pages\/contact"
+        "headline": "Eure Fragen, unsere Antworten:",
+        "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
+        "btntext": "Weitere Fragen anzeigen"
       }
     }
   },
