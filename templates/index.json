@@ -352,6 +352,11 @@
         "review_text_5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
       }
     },
+    "sk-faq": {
+      "type": "sk-faq",
+      "settings": {
+      }
+    },
     "sk-help": {
       "type": "sk-help",
       "settings": {
@@ -364,18 +369,6 @@
       }
     }
   },
-  "sk-faq": {
-    "type": "sk-faq",
-    "settings": {
-      "background": "#efefef",
-      "headline": "Eure Fragen, unsere Antworten:",
-      "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
-      "faqHeadline": "Die 5 kritischsten Fragen",
-      "Frage1": "Frage 1",
-      "Antwort1": "Antwort1"
-    }
-  },
-  
   "order": [
     "slideshow",
     "sk-shopProperties",
