@@ -52,7 +52,7 @@
   }
 }
 
-.FW_Product__Info--badgeContainer {
+.sk_cart_shopProperties_Container {
   background-color: #f4f4f5;
   display: flex;
   align-items: center;
@@ -60,13 +60,12 @@
   padding: 8px 4px;
   margin: 5px 20px;
 }
-.FW_Product__Info--badgeContainer > i {
+.sk_cart_shopProperties_Container > i {
   padding-right: 10px;
 }
-.FW_Product__Info--badgeText {
+.sk_cart_shopProperties_Text {
   color: #000;
   font-size: 11px;
-
   margin-right: 10px;
 }
 
