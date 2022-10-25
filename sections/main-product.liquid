@@ -440,39 +440,41 @@
 					        </ul>
 
                 <div class="SK_ProductForm__ShopProperties">
-                  {%- if product.metafields.custom.metafeld_box_4 -%}
+                  {%- if product.metafields.custom.metafeld_box_1 -%}
 			 		        <div class="SK_ProductForm__ShopProperty">
                			<div class="SK_ProductForm__ShopProperty_Container">
           		  			<div class="SK_ProductForm__ShopProperty_Image">
                         <i class="fa-solid fa-truck-fast"></i>
                       </div>
-                  		<div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_4}}</div>
+                  		<div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_1}}</div>
                			</div>	
             		  </div>
                 {%- endif -%}
+                {%- if product.metafields.custom.metafeld_box_2 -%}
 					        <div class="SK_ProductForm__ShopProperty">
                			<div class="SK_ProductForm__ShopProperty_Container">
                           <div class="SK_ProductForm__ShopProperty_Image">
                             <i class="fa-solid fa-rotate-left"></i>
                   		</div>	
-                        <div class="SK_ProductForm__ShopProperty_Text">Einfache Retoure</div>
+                        <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_2}}</div>
                			</div>	
             		  </div>
+                  {%- if product.metafields.custom.metafeld_box_3 -%}
             		  <div class="SK_ProductForm__ShopProperty">
                			<div class="SK_ProductForm__ShopProperty_Container">
                            <div class="SK_ProductForm__ShopProperty_Image">
                             <i class="fa-solid fa-euro-sign"></i>
                         </div>
-                          <div class="SK_ProductForm__ShopProperty_Text">Geld-Zurück-Garantie</div>
+                          <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_3}}</div>
                			</div>	
             		  </div>
+                  {%- if product.metafields.custom.metafeld_box_4 -%}
             		  <div class="SK_ProductForm__ShopProperty">
                			<div class="SK_ProductForm__ShopProperty_Container">
                            <div class="SK_ProductForm__ShopProperty_Image">
                             <i class="fa-solid fa-check"></i>
                            </div>
-
-                          <div class="SK_ProductForm__ShopProperty_Text">96.8% Zufriedenheit</div>
+                          <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_4}}</div>
                			</div>	
             		  </div>
 				        </div>
