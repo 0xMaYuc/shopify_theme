@@ -482,7 +482,6 @@ ul.SK_Payment_Methods {
 }
 
 .SK_Payment_Methods {
-  margin: 0 -8px;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
