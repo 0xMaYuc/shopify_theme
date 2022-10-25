@@ -402,7 +402,13 @@
                       </style>
                     {%- endif -%}
 
-                    <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                    <script>
+                      const btn = document.getElementById('intoCartButton');
+                      btn.addEventListener('click', function handleClick() {
+                        btn.textContent = 'Button clicked';
+                      });
+                    </script>
+                    <button id="intoCartButton" type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
                       {%- if product.selected_or_first_available_variant.available -%}
                         <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
 
@@ -414,7 +420,7 @@
                         {{- 'product.form.sold_out' | t -}}
                       {%- endif -%}
                     </button>
-                    <div class="buttonClicked" style="opacity: 0;">
+                    <div class="buttonClicked" style="display:none;">
                       <p class="buttonClicked__Headline">Gute Wahl! 👍</p>
                       <p class="buttonClicked__Text">Dein Versand ist kostenlos.</p>
                     </div>
