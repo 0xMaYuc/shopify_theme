@@ -1,13 +1,8 @@
 <div class="fw_customer__container fw_customer"  {% if section.settings.background %}style="background:{{ section.settings.background}};display: flex;"{% endif %}>
     <div class="fw_customer__image">
-        <svg class="Icon Icon--account" role="presentation" viewBox="0 0 20 20">
-            <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
-              <path d="M0 18c0-4.5188182 3.663-8.18181818 8.18181818-8.18181818h1.63636364C14.337 9.81818182 18 13.4811818 18 18"></path>
-              <circle cx="9" cy="4.90909091" r="4.90909091"></circle>
-            </g>
-          </svg>
+        <img class="" src="{{ section.settings.imagesupport | img_url: 'master' }}" alt="{{ section.settings.imagesupport }}" width="20" height="20" />
+                   
 
-      <!--<img class="" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/man-models-fall-fashion-in-park_400x.jpg?v=1647017250">-->
     </div>
     <p class="fw_customer__text"><b>{{section.settings.textName}}</b> {{section.settings.textUnd}} <b>{{section.settings.textAnzahl}}</b> {{section.settings.TextAbschluss}}</p>
 </div>
@@ -70,7 +65,7 @@
       "type": "image_picker",
       "id": "imagesupport",
       "label": "Bild",
-      "info": "220 x 150px .jpg recommended"
+      "info": "20 x 20px .jpg recommended"
     },
     {
       "type": "text",
