@@ -1,5 +1,16 @@
 {
   "sections": {
+    "sk-customerCount": {
+      "type": "sk-customerCount",
+      "settings": {
+        "background": "#f4f4f5",
+        "imagesupport": "shopify:\/\/shop_images\/1.CONTOURINGVertiefedeineWangenknochenmitdemSEPIASTICKfuereinestrahlendfrischeKakaobronze._1080x1350px.jpg",
+        "textName": "Emma K.",
+        "textUnd": "und",
+        "textAnzahl": "25.500+ andere Kunden",
+        "TextAbschluss": "lieben unsere Produkte"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -21,10 +32,16 @@
             "size_chart": ""
           }
         },
-        "description": { "type": "description", "settings": {} },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": { "show_label": false }
+          "settings": {
+            "show_label": false
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -67,17 +84,12 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "sk-customerCount": {
-        "type": "sk-customerCount",
-        "settings": {
-            "background": "#f4f4f5",
-            "textName": "Emma K.",
-            "textUnd": "und",
-            "textAnzahl": "25.500+ andere Kunden",
-            "TextAbschluss": "lieben unsere Produkte"
-        }
-      }
+    }
   },
-  "order": ["sk-customerCount", "main", "product-recommendations", "recently-viewed-products"]
+  "order": [
+    "sk-customerCount",
+    "main",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
 }
