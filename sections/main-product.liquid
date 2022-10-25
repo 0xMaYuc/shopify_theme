@@ -207,6 +207,21 @@
 
         <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
           {{ slideshow_media }}
+
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'description' -%}
+                {%- if product.description != blank -%}
+                  <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+                    <div class="Rte">
+                      {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
+                    </div>
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+
+        
         </div>
 
         {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
@@ -249,19 +264,7 @@
       </div>
       {%- endif -%}
  
-    {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'description' -%}
-            {%- if product.description != blank -%}
-              <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
-                <div class="Rte">
-                  {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
-                </div>
-              </div>
-            {%- endif -%}
-        {%- endcase -%}
-    {%- endfor -%}
-
+  
 
     {%- capture product_aside -%}
       {%- comment -%}
