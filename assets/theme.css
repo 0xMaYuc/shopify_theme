@@ -10825,7 +10825,9 @@ shopify-payment-terms {
 .SidebarMenu .Drawer__Content::before {
   top: 0;
   height: 25px;
+  /*
   background-image: linear-gradient(var(--navigation-background), rgba(var(--navigation-background-rgb), 0.6) 40%, rgba(var(--navigation-background-rgb), 0));
+  */
 }
 
 .SidebarMenu .Drawer__Footer::before {

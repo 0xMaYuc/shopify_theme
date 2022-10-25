@@ -58,18 +58,16 @@
   align-items: center;
   justify-content: center;
   padding: 8px 4px;
-  margin: 0px 20px;
+  margin: 5px 20px;
 }
 .FW_Product__Info--badgeText {
-  color: #fff;
+  color: #000;
   font-size: 11px;
-  font-family: var(--text-font-family);
-  font-weight: var(--text-font-weight);
-  font-style: var(--text-font-style);
-  letter-spacing: 0.05em;
+
+  margin-right: 10px;
 }
 
-/* Warenkorb Button und animation /*
+/* Warenkorb Button und animation */
 .ProductForm__AddToCart {
   position: relative;
   -webkit-transition-duration: 0.8s;
