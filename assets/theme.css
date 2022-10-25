@@ -10730,7 +10730,8 @@ shopify-payment-terms {
  */
 .SidebarMenu {
   height: 100%;
-  background: var(--navigation-background);
+  //background: var(--navigation-background);
+  background: #fff;
   color: var(--navigation-text-color);
 }
 
