@@ -567,8 +567,9 @@ This is the root container for the zoom functionality. Must not be removed, as o
     var lineBreak = document.createElement("br");
     var textStart = 'Gute Wahl! 👍';
     var textEnd = ' Dein Versand ist kostenlos.';
-    //btn.textContent = 'Gute Wahl! 👍' + '<br> Dein Versand ist kostenlos.';
-    btn.textContent = textStart +' '+ lineBreak +' '+ textEnd;
+    
+    btn.textContent = 'Gute Wahl! 👍 <br/> Dein Versand ist kostenlos.';
+   // btn.textContent = textStart +' '+ lineBreak +' '+ textEnd;
     setTimeout(changeBackText, 1000)
   });
   function changeBackText() {
