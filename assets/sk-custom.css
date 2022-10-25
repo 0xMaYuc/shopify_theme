@@ -53,14 +53,9 @@
 }
 
 .ProductForm__AddToCart {
-  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 20px;
-  letter-spacing: 4px;
   position: relative;
-  border: none;
-  padding: 20px;
   width: 200px;
   transition-duration: 0.8s;
   overflow: hidden;
