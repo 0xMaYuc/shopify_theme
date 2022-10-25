@@ -10742,7 +10742,7 @@ shopify-payment-terms {
 }
 
 .SidebarMenu .Text--subdued {
-  color: var(--navigation-text-color-light);
+  color: rgba(28, 27, 27, 0.5);
 }
 
 .SidebarMenu .Collapsible,
@@ -10772,7 +10772,7 @@ shopify-payment-terms {
   width: 100%;
   min-height: 48px;
   box-shadow: 0 1px c6c6c6 inset;
-  color: var(--navigation-text-color-light);
+  color: rgba(28, 27, 27, 0.5);
 }
 
 .SidebarMenu__CurrencySelector,
