@@ -53,17 +53,17 @@
 }
 
 .ProductForm__AddToCart {
-  text-transform: uppercase;
-  cursor: pointer;
   position: relative;
-  width: 200px;
+  -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
+  text-decoration: none;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .ProductForm__AddToCart:after {
   content: "";
-  background: #1abc9c;
+  background: #90ee90;
   display: block;
   position: absolute;
   padding-top: 300%;
@@ -79,10 +79,6 @@
   margin: 0;
   opacity: 1;
   transition: 0s;
-}
-
-.ProductForm__AddToCart:focus {
-  outline: 0;
 }
 
 /* SK - FAQ */
