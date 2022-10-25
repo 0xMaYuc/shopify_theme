@@ -346,20 +346,21 @@
                       <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
                       <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                     </div>
-                      <div class="ProductForm__Available">
-                      
-                    {%- if product.selected_or_first_available_variant.inventory_quantity >= 0 -%}
-                        <div class="ProductForm__Available_pulse"></div>
-                        <span style="vertical-align: middle; padding-left: 6px">
-                          <text style="color:#008b10;">Verfügbar im Lager</text>
-                        </span>
-                    {%- else -%}
-                        <div class="ProductForm__NotAvailable_pulse"></div>
-                         <span style="vertical-align: middle; padding-left: 6px">
-                            <text style="color:var(--product-sale-price-color);">Nicht Verfügbar</text>
+
+
+                    <div class="ProductForm__Available">
+                      {%- if product.selected_or_first_available_variant.inventory_quantity >= 0 -%}
+                          <div class="ProductForm__Available_pulse"></div>
+                          <span style="vertical-align: middle; padding-left: 6px">
+                            <text style="color:#008b10;">Verfügbar im Lager</text>
                           </span>
-                    {%- endif -%}
-                     </div>
+                      {%- else -%}
+                          <div class="ProductForm__NotAvailable_pulse"></div>
+                          <span style="vertical-align: middle; padding-left: 6px">
+                              <text style="color:var(--product-sale-price-color);">Nicht Verfügbar</text>
+                            </span>
+                      {%- endif -%}
+                    </div>
                   </div>
                
 
