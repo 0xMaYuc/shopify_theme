@@ -52,6 +52,35 @@
   }
 }
 
+.ProductForm__AddToCart {
+  position: relative;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ProductForm__AddToCart:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.ProductForm__AddToCart:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
 /* SK - FAQ */
 
 .faq {
