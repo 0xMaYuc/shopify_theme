@@ -60,6 +60,9 @@
   padding: 8px 4px;
   margin: 5px 20px;
 }
+.FW_Product__Info--badgeContainer > i {
+  padding-right: 10px;
+}
 .FW_Product__Info--badgeText {
   color: #000;
   font-size: 11px;
