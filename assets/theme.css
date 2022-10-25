@@ -10731,14 +10731,14 @@ shopify-payment-terms {
 .SidebarMenu {
   height: 100%;
   //background: var(--navigation-background);
-  color: var(--navigation-text-color);
+  color: #c6c6c6;
   background: #fff;
   color: #000;
 }
 
 .SidebarMenu .Heading,
 .supports-hover .SidebarMenu .Link--primary:hover {
-  color: var(--navigation-text-color);
+  color: #c6c6c6;
 }
 
 .SidebarMenu .Text--subdued {
@@ -10747,7 +10747,7 @@ shopify-payment-terms {
 
 .SidebarMenu .Collapsible,
 .SidebarMenu .Linklist {
-  border-color: var(--navigation-border-color);
+  border-color: #c6c6c6;
 }
 
 .SidebarMenu__Nav .Collapsible:first-child {
@@ -10771,7 +10771,7 @@ shopify-payment-terms {
   justify-content: center;
   width: 100%;
   min-height: 48px;
-  box-shadow: 0 1px var(--navigation-border-color) inset;
+  box-shadow: 0 1px #c6c6c6 inset;
   color: var(--navigation-text-color-light);
 }
 
@@ -10810,7 +10810,7 @@ shopify-payment-terms {
 }
 
 .SidebarMenu__CurrencySelector + .SidebarMenu__Social {
-  border-left: 1px solid var(--navigation-border-color);
+  border-left: 1px solid #c6c6c6;
 }
 
 .SidebarMenu .Drawer__Content::before,
