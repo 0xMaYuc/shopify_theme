@@ -79,6 +79,17 @@
   transition: all 1s;
 }
 
+.ProductForm__AddToCart:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.ProductForm__AddToCart:focus {
+  outline: 0;
+}
+
 /* SK - FAQ */
 
 .faq {
