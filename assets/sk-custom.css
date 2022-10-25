@@ -501,7 +501,6 @@ ul.SK_Payment_Methods {
 .SK_ProductForm__ShopProperty_Container {
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
   background-color: #fff;
   border-radius: 4px;
   padding: 8px 4px;
