@@ -80,6 +80,10 @@
   transition: 0s;
 }
 
+#intoCardButton {
+  white-space: normal;
+}
+
 /* SK - FAQ */
 
 .faq {
