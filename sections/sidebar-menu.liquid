@@ -65,26 +65,32 @@
           <div style="margin-top: 14px !important;" class="FW_Product__Info--row">
 
             <div style="width: 100% !important;" class="FW_Product__Info--column">
-                       <div style="height: 100px; background: url(https://cdn.shopify.com/s/files/1/0632/5282/4281/files/menu_barfussschuhe.png?v=1657134604); background-size: cover;" class="FW_Product__Info--badgeContainer">
-                            <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText"><a href="/pages/warum-barfussschuhe">Warum Barfußschuhe?</a></p>
-                       </div>	
-                  </div>
+              <div style="height: 100px; {% if section.settings.background %}background:{{ section.settings.background}};  background-size: cover;"{% endif %} class="FW_Product__Info--badgeContainer">
+                  <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText">
+                    <a href="/pages/warum-barfussschuhe">{{section.settings.navLinkBox_Text1}}</a>
+                  </p>
+              </div>	
+            </div>
               
                   <div style="width: 100% !important;" class="FW_Product__Info--column">
                        <div style="height: 100px; background: url(https://cdn.shopify.com/s/files/1/0632/5282/4281/files/menu_faq.png?v=1657134603); background-size: cover;" class="FW_Product__Info--badgeContainer">
-                            <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText"><a href="/a/faq">Häufige Fragen</a></p>
+                            <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText">
+                              <a href="/a/faq">{{section.settings.navLinkBox_Text2}}</a>
+                            </p>
                        </div>	
                   </div>
   
               <div style="width: 100% !important;" class="FW_Product__Info--column">
                        <div style="height: 100px; background: url(https://cdn.shopify.com/s/files/1/0632/5282/4281/files/mobile_menu_transparenz.png?v=1665162388); background-size: cover;" class="FW_Product__Info--badgeContainer">
-                            <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText"><a href="/pages/transparenz">Transparenz</a></p>
+                            <p style="width: 100%; text-align: center; text-shadow: 1px 2px 2px #000; font-size: 15px !important; font-weight: 600 !important; color: #fff !important;" class="FW_Product__Info--badgeText">
+                              <a href="/pages/transparenz">{{section.settings.navLinkBox_Text3}}</a>
+                            </p>
                        </div>	
                   </div>
   
             </div>
 
-          navLinkBox_Text1
+          
 
           {%- assign secondary_menu = linklists[section.settings.secondary_menu] -%}
 
