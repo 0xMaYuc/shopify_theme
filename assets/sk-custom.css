@@ -54,8 +54,8 @@
 
 .ProductForm__AddToCart {
   position: relative;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -70,7 +70,7 @@
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 1.2s;
 }
 
 .ProductForm__AddToCart:active:after {

@@ -414,6 +414,10 @@
                         {{- 'product.form.sold_out' | t -}}
                       {%- endif -%}
                     </button>
+                    <div class="buttonClicked" style="opacity: 0;">
+                      <p class="buttonClicked__Headline">Gute Wahl! 👍</p>
+                      <p class="buttonClicked__Text">Dein Versand ist kostenlos.</p>
+                    </div>
 
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
