@@ -10738,7 +10738,7 @@ shopify-payment-terms {
 
 .SidebarMenu .Heading,
 .supports-hover .SidebarMenu .Link--primary:hover {
-  color: #fff;
+  color: #000;
 }
 
 .SidebarMenu .Text--subdued {
@@ -10747,7 +10747,7 @@ shopify-payment-terms {
 
 .SidebarMenu .Collapsible,
 .SidebarMenu .Linklist {
-  border-color: #000;
+  border-color: #f4f4f5;
 }
 
 .SidebarMenu__Nav .Collapsible:first-child {
