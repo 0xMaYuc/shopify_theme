@@ -1,0 +1,105 @@
+<div class="fw_customer__container fw_customer" style="display: flex;">
+    <div class="fw_customer__image">
+        <svg class="Icon Icon--account" role="presentation" viewBox="0 0 20 20">
+            <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+              <path d="M0 18c0-4.5188182 3.663-8.18181818 8.18181818-8.18181818h1.63636364C14.337 9.81818182 18 13.4811818 18 18"></path>
+              <circle cx="9" cy="4.90909091" r="4.90909091"></circle>
+            </g>
+          </svg>
+
+      <!--<img class="" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/man-models-fall-fashion-in-park_400x.jpg?v=1647017250">-->
+    </div>
+    <p class="fw_customer__text"><b>{{section.settings.textName}}</b> {{section.settings.textUnd}} <b>{{section.settings.textAnzahl}}</b> {{section.settings.TextAbschluss}}</p>
+</div>
+
+<style>
+    .fw_customer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+          padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 0px;
+        background-color: #f4f4f5;
+    }
+    
+    .fw_customer__image {
+        display: flex;
+        margin-right: 4px;
+    }
+    
+    .fw_customer__text {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        color: #1d1d1f;
+        font-family: Gordita,sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: .36px;
+        line-height: 11px;
+        text-align: left;
+    }
+    
+    .fw_customer__image img {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+    
+    .fw_customer__image img:nth-child(2) {
+        position: relative;
+        left: -5px;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "SK - customerCount",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default": "#f4f4f5"
+    },
+	{
+      "type": "image_picker",
+      "id": "imagesupport",
+      "label": "Bild",
+      "info": "220 x 150px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "textName",
+      "label": "Name von Kunden",
+      "default": "Emma K."
+    },
+    {
+        "type": "text",
+        "id": "textUnd",
+        "label": "und",
+        "default": "und"
+      },
+	{
+      "type": "text",
+      "id": "textAnzahl",
+      "label": "Anzahl von Kunden",
+      "default": "25.500+ andere Personen"
+    },
+	{
+      "type": "text",
+      "id": "TextAbschluss",
+      "label": "Ende des Satzes",
+      "default": "lieben unsere Produkte"
+    }
+  ],
+  "presets": [{
+    "name": "SK - customerCount",
+    "category": "Custom"
+  }]
+}
+{% endschema %}
