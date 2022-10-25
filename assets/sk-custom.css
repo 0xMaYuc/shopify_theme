@@ -60,6 +60,7 @@
   overflow: hidden;
   cursor: pointer;
 }
+
 .ProductForm__AddToCart:after {
   content: "";
   background: #90ee90;
