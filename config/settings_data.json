@@ -52,13 +52,15 @@
         "settings": {
           "primary_menu": "main-menu",
           "secondary_menu": "",
-          "navLinkBox_Text1": "",
+          "navLinkBox_Text1": "Warum CosmeticsNude?",
           "navLinkBox_Link1": "\/pages\/contact",
           "navLinkBox_Image1": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-          "navLinkBox_Text2": "",
+          "navLinkBox_Text2": "Haeufige Fragen",
           "navLinkBox_Link2": "\/pages\/contact",
-          "navLinkBox_Text3": "",
+          "navLinkBox_Image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
+          "navLinkBox_Text3": "Wer sind wir?",
           "navLinkBox_Link3": "\/pages\/contact",
+          "navLinkBox_Image3": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
           "show_social_media": true
         }
       },
