@@ -449,36 +449,39 @@
                   		<div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_1}}</div>
                			</div>	
             		  </div>
-                {%- endif -%}
-                {%- if product.metafields.custom.metafeld_box_2 -%}
-					        <div class="SK_ProductForm__ShopProperty">
-               			<div class="SK_ProductForm__ShopProperty_Container">
-                          <div class="SK_ProductForm__ShopProperty_Image">
-                            <i class="fa-solid fa-rotate-left"></i>
-                  		</div>	
-                        <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_2}}</div>
-               			</div>	
-            		  </div>
+                  {%- endif -%}
+                  {%- if product.metafields.custom.metafeld_box_2 -%}
+                    <div class="SK_ProductForm__ShopProperty">
+                      <div class="SK_ProductForm__ShopProperty_Container">
+                            <div class="SK_ProductForm__ShopProperty_Image">
+                              <i class="fa-solid fa-rotate-left"></i>
+                        </div>	
+                          <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_2}}</div>
+                      </div>	
+                    </div>
+                  {%- endif -%}
                   {%- if product.metafields.custom.metafeld_box_3 -%}
-            		  <div class="SK_ProductForm__ShopProperty">
-               			<div class="SK_ProductForm__ShopProperty_Container">
-                           <div class="SK_ProductForm__ShopProperty_Image">
+                  <div class="SK_ProductForm__ShopProperty">
+                    <div class="SK_ProductForm__ShopProperty_Container">
+                            <div class="SK_ProductForm__ShopProperty_Image">
                             <i class="fa-solid fa-euro-sign"></i>
                         </div>
                           <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_3}}</div>
-               			</div>	
-            		  </div>
+                    </div>	
+                  </div>
+                  {%- endif -%}
                   {%- if product.metafields.custom.metafeld_box_4 -%}
-            		  <div class="SK_ProductForm__ShopProperty">
-               			<div class="SK_ProductForm__ShopProperty_Container">
-                           <div class="SK_ProductForm__ShopProperty_Image">
+                  <div class="SK_ProductForm__ShopProperty">
+                    <div class="SK_ProductForm__ShopProperty_Container">
+                            <div class="SK_ProductForm__ShopProperty_Image">
                             <i class="fa-solid fa-check"></i>
-                           </div>
+                            </div>
                           <div class="SK_ProductForm__ShopProperty_Text">{{product.metafields.custom.metafeld_box_4}}</div>
-               			</div>	
-            		  </div>
+                    </div>	
+                  </div>
+                  {%- endif -%}
 				        </div>
-               
+            
                 {%- when 'store_pickup' -%}
                   {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
                   <div class="ProductMeta__StoreAvailabilityContainer" {{ block.shopify_attributes }}></div>
