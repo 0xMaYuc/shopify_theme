@@ -1,23 +1,21 @@
-<div class="fw_customer__container fw_customer"  {% if section.settings.background %}style="background:{{ section.settings.background}};display: flex;"{% endif %}>
+<div class="fw_customer__container fw_customer"  {% if section.settings.background %}style="background:{{ section.settings.background}};"{% endif %}>
     <div class="fw_customer__image">
         <img class="" src="{{ section.settings.imagesupport | img_url: 'master' }}" alt="{{ section.settings.imagesupport }}" width="20" height="20" />
-                   
-
     </div>
     <p class="fw_customer__text"><b>{{section.settings.textName}}</b> {{section.settings.textUnd}} <b>{{section.settings.textAnzahl}}</b> {{section.settings.TextAbschluss}}</p>
 </div>
 
 <style>
     .fw_customer {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
-          padding-left: 12px;
-        padding-right: 12px;
-        border-radius: 0px;
         background-color: #f4f4f5;
     }
     
@@ -27,14 +25,10 @@
     }
     
     .fw_customer__text {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
         width: fit-content;
         color: #1d1d1f;
-        font-family: Gordita,sans-serif;
         font-size: 10px;
         font-weight: 500;
-        letter-spacing: .36px;
         line-height: 11px;
         text-align: left;
     }
