@@ -52,34 +52,6 @@
   }
 }
 
-.ProductForm__AddToCart {
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 20px;
-  letter-spacing: 4px;
-  position: relative;
-  border: none;
-  padding: 20px;
-  width: 200px;
-  transition-duration: 0.8s;
-
-  overflow: hidden;
-}
-
-.ProductForm__AddToCart:after {
-  content: "";
-  background: #1abc9c;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 1s;
-}
-
 /* SK - FAQ */
 
 .faq {
