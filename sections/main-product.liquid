@@ -522,8 +522,6 @@
           {%- endif -%}
 
             <!-- SK - productDescription -->
-
-            {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
                   <div class="Rte">
@@ -531,7 +529,6 @@
                   </div>
                 </div>
               {%- endif -%}
-          {%- endcase -%}
         </div>
       </div>
     </div>
