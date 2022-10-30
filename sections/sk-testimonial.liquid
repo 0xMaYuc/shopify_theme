@@ -1,8 +1,8 @@
 
 <div class="sk-testimonial">
-    <div class="review_showcase">
+    <div class="testimonial_show">
         
-        <div class="review_showcase_stars" role="img"><svg fill="none" focusable="false" width="20" height="20" viewBox="0 0 14 13">
+        <div class="testimonial_show_stars" role="img"><svg fill="none" focusable="false" width="20" height="20" viewBox="0 0 14 13">
             <path d="M7 0L8.6458 4.73475L13.6574 4.83688L9.66296 7.86525L11.1145 12.6631L7 9.8L2.8855 12.6631L4.33704 7.86525L0.342604 4.83688L5.3542 4.73475L7 0Z" fill="currentColor"></path>
             </svg><svg fill="none" focusable="false" width="20" height="20" viewBox="0 0 14 13">
             <path d="M7 0L8.6458 4.73475L13.6574 4.83688L9.66296 7.86525L11.1145 12.6631L7 9.8L2.8855 12.6631L4.33704 7.86525L0.342604 4.83688L5.3542 4.73475L7 0Z" fill="currentColor"></path>
@@ -15,21 +15,21 @@
             </svg>
         </div>
 
-        <span class="review_text">
+        <span class="testimonial_text">
         "{{section.settings.testimonialText}}"
         </span>
 
-        <div class="review_person">
+        <div class="testimonial_user">
             <img src="{{ section.settings.imagesupport | img_url: '150px' }}" alt="Testimonial Image">
         </div>
 
-        <span class="review_person_name">
+        <span class="testimonial_user_name">
             {{section.settings.testimonialName}}
         </span>
 
-        <div class="review_verified_container">
+        <div class="testimonial_verified">
             <svg width="24px" height="24px" stroke-width="1.5" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <span class="review_verified" style="vertical-align: middle;">
+            <span style="vertical-align: middle;">
                 Verifizierte Kundin
             </span>
         </div>
@@ -42,34 +42,33 @@
     .sk-testimonial {
         background: {{ section.settings.background }};
     }
-    .review_showcase {
-       
+    .testimonial_show {
         padding: 50px 0;
       }
    
-      .review_showcase {
+      .testimonial_show {
         max-width: 600px;
         margin: auto;
         padding: 20px;
         text-align: center;
       }
     
-      .review_showcase_stars {
+      .testimonial_show_stars {
         display: block;
         color: #fbbf0a;
       }
     
-      .review_text {
+      .testimonial_text {
         font-size: 18px;
         color: #1c1b1b;
       }
     
-      .review_person_name {
+      .testimonial_user_name {
         display: block;
         margin-top: 15px;
         font-size: 20px;
       }
-      .review_person > img {
+      .testimonial_user > img {
         width: 3.2em;
         height: 3.2em;
         line-height: 3.2em;
