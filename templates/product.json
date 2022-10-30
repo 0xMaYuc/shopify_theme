@@ -49,6 +49,14 @@
             "show_price_in_button": false,
             "show_payment_button": false
           }
+        },
+        "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394": {
+          "type": "content",
+          "settings": {
+            "title": "Test",
+            "content": "<p>Hallo Test<\/p>",
+            "page": "anwendung-2"
+          }
         }
       },
       "block_order": [
@@ -56,7 +64,8 @@
         "variant_selector",
         "description",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394"
       ],
       "settings": {
         "image_size": "small",
