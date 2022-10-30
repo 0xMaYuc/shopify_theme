@@ -17,7 +17,9 @@
        "{{section.settings.testimonialText}}"
     </span>
 
-    <div class="review_person"></div>
+    <div class="review_person">
+        <img src="{{ section.settings.imagesupport | img_url: '150px' }}" alt="Kundensupport">
+    </div>
 
     <span class="review_person_name">
         {{section.settings.testimonialName}}
@@ -99,13 +101,13 @@
           "type": "image_picker",
           "id": "imagesupport",
           "label": "Bild",
-          "info": "220 x 150px .jpg recommended"
+          "info": "150 x 150px .jpg recommended"
         },
       
         {
           "type": "text",
           "id": "testimonialName",
-          "label": "Name of User",
+          "label": "Name des Kunden",
           "default": "Andrea L."
         }
       ],
