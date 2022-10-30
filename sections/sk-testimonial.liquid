@@ -34,3 +34,46 @@
     </div>
       
     </div>
+
+
+      
+  <style>
+
+  </style>
+
+    {% schema %}
+    {
+      "name": "SK - Testimonials",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background Color",
+          "default": "#ffffff"
+        },
+        {
+            "type": "text",
+            "id": "testimonialText",
+            "label": "Testimonial Text",
+            "default": "Ich bin begeistert!"
+          },
+        {
+          "type": "image_picker",
+          "id": "imagesupport",
+          "label": "Bild",
+          "info": "220 x 150px .jpg recommended"
+        },
+      
+        {
+          "type": "text",
+          "id": "testimonialName",
+          "label": "Name of User",
+          "default": "Andrea L."
+        }
+      ],
+      "presets": [{
+        "name": "SK - Testimonials",
+        "category": "Custom"
+      }]
+    }
+    {% endschema %}
