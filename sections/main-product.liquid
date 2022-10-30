@@ -518,22 +518,21 @@
                 <a href="#ProductAside" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
                 <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
               </div>
-            </div>
-
-        
+            </div>        
           {%- endif -%}
 
-            <!-- SK - productDescription -->
-              {%- if product.description != blank -%}
-                <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
-                  <div class="Rte">
-                    {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
-                  </div>
-                </div>
-              {%- endif -%}
         </div>
       </div>
     </div>
+
+     <!-- SK - productDescription -->
+     {%- if product.description != blank -%}
+      <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+        <div class="Rte">
+          {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
+        </div>
+      </div>
+    {%- endif -%}
 
     {%- if product_aside != blank -%}
       <div class="Product__Aside">
