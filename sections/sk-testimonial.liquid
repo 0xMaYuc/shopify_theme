@@ -14,13 +14,13 @@
     </div>
 
     <span class="review_text">
-        "Ich bin begeistert! Die Barfußschuhe haben meine Haltungsschmerzen deutlich gemindert und auch die Thermo-Kleidung ist sensationell!"
+       "{{section.settings.testimonialText}}"
     </span>
 
     <div class="review_person"></div>
 
     <span class="review_person_name">
-        Sylvia H.
+        {{section.settings.testimonialName}}
     </span>
 
 
@@ -37,12 +37,11 @@
 
       
   <style>
-    .review_person_name {
-        display: block;
-        margin-top: 15px;
-        font-size: 20px;
+    .review_showcase {
+        background: {{ section.settings.background }};
+        padding: 50px 0;
       }
-      
+   
       .review_showcase {
         max-width: 600px;
         margin: auto;
@@ -62,6 +61,11 @@
         color: #1c1b1b;
       }
     
+      .review_person_name {
+        display: block;
+        margin-top: 15px;
+        font-size: 20px;
+      }
       .review_person {
         width: 3.2em;
         height: 3.2em;
