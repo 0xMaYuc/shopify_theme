@@ -9570,7 +9570,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
 }
-@media screen and (min-width: 641px) {
+@media screen and (max-width: 641px) {
   .ProductMeta {
     text-align: left;
   }
