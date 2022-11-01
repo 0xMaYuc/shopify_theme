@@ -284,7 +284,6 @@
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-      {%- assign complementary_products_block = section.blocks | where: 'type', 'complementary_products' | first -%}
 
       {%- if complementary_products_block != blank -%}
         <product-recommendations class="ComplementaryProducts Section Section--spacingNormal" intent="complementary" product="{{ product.id }}" limit="{{ block.settings.products_count }}" section-id="{{ section.id }}">
@@ -525,21 +524,20 @@
       </div>
     </div>
 
-     <!-- SK - productDescription -->
-     {%- if product.description != blank -%}
-      <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
-        <div class="Rte">
-          {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
-        </div>
-      </div>
-    {%- endif -%}
-
     {%- if product_aside != blank -%}
       <div class="Product__Aside">
         <span id="ProductAside" class="Anchor"></span>
         {{- product_aside -}}
       </div>
     {%- endif -%}
+      <!-- SK - productDescription -->
+      {%- if product.description != blank -%}
+        <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+          <div class="Rte">
+            {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
+          </div>
+        </div>
+      {%- endif -%}
   </div>
 </section>
 
