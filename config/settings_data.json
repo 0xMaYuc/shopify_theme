@@ -101,8 +101,8 @@
           "footer-0": {
             "type": "text",
             "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "title": "Unsere Mission",
+              "content": "<p>Wir stehen für natürliche Schönheit! Mit unseren Veganen Beauty Produkten möchten wir nicht nur zeigen wie einfach es ist sich wunderschön zu fühlen, sondern der Umwelt etwas Gutes tun.<\/p>",
               "show_social_media": true
             }
           },
@@ -116,7 +116,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              "content": "<p>Halte dich auf dem laufenden & trage deine E-Mail ein. Profitiere von VIP-Rabatten.<\/p>"
             }
           }
         },
