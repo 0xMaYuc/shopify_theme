@@ -133,7 +133,9 @@
     </script>
 
     {% render 'microdata-schema' %}
-  </head>
+  
+	{{ shop.metafields.loox["global_html_head"] }}
+</head>
 
   {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}
 
@@ -195,5 +197,7 @@
 
       {% section 'footer' %}
     </div>
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
