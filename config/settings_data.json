@@ -45,13 +45,14 @@
     "cart_free_shipping_threshold": "50",
     "social_facebook": "https:\/\/www.facebook.com\/nudecosmeticsofficial",
     "social_instagram": "https:\/\/www.instagram.com\/nudecosmetics_official\/?hl=de",
+    "checkout_logo_image": "shopify:\/\/shop_images\/checkout_final_ebb3a345-e6a3-48c8-b828-ae82e5800ed6.png",
     "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#efefef",
     "checkout_accent_color": "#1c1b1b",
-    "checkout_button_color": "#1c1b1b",
+    "checkout_button_color": "#ddbfa6",
     "sections": {
       "sidebar-menu": {
         "type": "sidebar-menu",
