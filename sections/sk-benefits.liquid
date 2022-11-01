@@ -54,12 +54,16 @@
                     </div>
                 </div> 
         </div>
+
+        {%- if section.settings.helplink != blank -%}
+            <div class="btn-wrapper">
+                <a href="{{section.settings.helplink | url}}" class="Button Button--primary">
+                    {{section.settings.btntext}}
+                </a>
+            </div>    
+          {%- endif -%}
         
-        <div class="btn-wrapper">
-            <a href="{{section.settings.helplink | url}}" class="Button Button--primary">
-                {{section.settings.btntext}}
-            </a>
-        </div>
+       
         
     </div>
 </div>
