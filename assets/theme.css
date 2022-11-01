@@ -9621,8 +9621,10 @@ shopify-payment-terms {
   .ProductMeta__Description{
     max-width: 630px;
     margin: 0px 24px;
-    text-align: left;
   }
+}
+.ProductMeta {
+  text-align: left;
 }
 
 .ProductMeta__Rating {
