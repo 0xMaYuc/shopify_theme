@@ -9617,10 +9617,11 @@ shopify-payment-terms {
   margin: 24px auto;
   text-align: left;
 }
-@media screen and (max-width: 1008px) {
+@media screen and (max-width: 641px) {
   .ProductMeta__Description{
     max-width: 630px;
     margin: 0px 24px;
+    text-align: left;
   }
 }
 
