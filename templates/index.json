@@ -67,8 +67,8 @@
         "imagesupport4": "shopify:\/\/shop_images\/small-business-interior.jpg",
         "headline4": "100% Natürlich",
         "text4": "Nullam convallis augue ut cursus pharetra. Curabitur fringilla ligula quis massa vulputate dignissim. Aliquam magna eros, pharetra eget feugiat eget, cursus a velit. Nunc aliquet tempus viverra.",
-        "btntext": "Fuege hier TExt dazu...dann funktioniert es",
-        "helplink": "\/contact"
+        "btntext": "",
+        "helplink": ""
       }
     },
     "featured-collections": {
