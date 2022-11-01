@@ -26,6 +26,7 @@
     "uppercase_heading": false,
     "text_font": "montserrat_n4",
     "base_text_font_size": 14,
+    "currency_code_enabled": false,
     "show_page_transition": false,
     "search_mode": "product,article,page",
     "product_show_price_on_hover": false,
