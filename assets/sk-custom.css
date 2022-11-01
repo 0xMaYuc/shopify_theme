@@ -285,7 +285,11 @@
 .section-icons.section-icons__block {
   margin: 1rem auto 3rem;
 }
-
+@media (max-width: 767px) {
+  .section-icons .section-icons__block {
+    grid-template-columns: auto;
+  }
+}
 @media (max-width: 991px) {
   .section-icons .btn-wrapper {
     margin-top: 45px;
