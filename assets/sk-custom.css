@@ -288,7 +288,7 @@
 @media (max-width: 767px) {
   .section-icons .section-icons__block {
     grid-template-columns: auto;
-    justify-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 991px) {
