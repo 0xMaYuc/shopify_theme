@@ -621,7 +621,7 @@ ul.SK_Payment_Methods {
 
 /* Discount */
 .sk-discount {
-  background-color: #29bb8b;
+  background-color: #DDBFA6;
   color: #fff;
   font-size: 13px;
   font-weight: 800;
@@ -642,7 +642,7 @@ ul.SK_Payment_Methods {
   width: 0;
   height: 0;
   transform: rotate(180deg);
-  border-color: transparent transparent #29bb8b;
+  border-color: transparent transparent #DDBFA6;
   border-style: solid;
   border-width: 0 8.5px 11px;
 }

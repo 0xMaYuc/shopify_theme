@@ -7,8 +7,8 @@
         "imagesupport": "shopify:\/\/shop_images\/1.CONTOURINGVertiefedeineWangenknochenmitdemSEPIASTICKfuereinestrahlendfrischeKakaobronze._1080x1350px.jpg",
         "textName": "Emma K.",
         "textUnd": "und",
-        "textAnzahl": "25.500+ andere Kunden",
-        "TextAbschluss": "lieben unsere Produkte"
+        "textAnzahl": "25.354+ andere Kundinnen",
+        "TextAbschluss": "lieben unsere Produkte!"
       }
     },
     "main": {
@@ -68,17 +68,37 @@
         "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394"
       ],
       "settings": {
-        "image_size": "small",
+        "image_size": "large",
         "stack_images": false,
         "show_thumbnails": true,
         "enable_image_zoom": true,
         "enable_video_looping": false
       }
     },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Könnte dir auch gefallen",
         "recommendations_count": 4,
         "show_product_info": true,
         "show_vendor": false,
@@ -87,6 +107,7 @@
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "title": "Recently viewed",
         "show_product_info": true,
@@ -98,6 +119,7 @@
   "order": [
     "sk-customerCount",
     "main",
+    "loox-product-reviews-app-section",
     "product-recommendations",
     "recently-viewed-products"
   ]

@@ -6,33 +6,21 @@
         "slide-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/25be0d57-2cfd-49ae-b537-76e3ae908aad.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/25be0d57-2cfd-49ae-b537-76e3ae908aad.jpg",
             "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
+            "content_position": "middleCenter",
+            "subheading": "Sei einfach du selbst",
+            "title": "Natural Beauty",
+            "button_1_text": "Mehr erfahren",
+            "button_1_link": "https:\/\/nudecosmetics.de\/collections\/bestseller",
             "button_2_text": "",
             "button_2_link": ""
           }
         }
       },
       "block_order": [
-        "slide-0",
-        "slide-1"
+        "slide-0"
       ],
       "settings": {
         "show_fullscreen": true,
@@ -40,24 +28,47 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
+        "button_color": "#ffffff",
+        "button_background": "#ddbfa6"
       }
     },
     "sk-shopProperties": {
       "type": "sk-shopProperties",
       "settings": {
-        "background": "#00b388",
+        "background": "#ddbfa6",
         "text_color": "#ffffff",
         "badge_color": "#ffffff",
-        "subheader_1": "Subline",
-        "headline-1": "Kostenloser Versand",
-        "subheader_2": "Subline",
-        "headline-2": "Einfache Retoure",
-        "subheader_3": "Subline",
-        "headline-3": "12 Monate Garantie",
-        "subheader_4": "Subline",
-        "headline-4": "26.000+ glückliche Kunden"
+        "subheader_1": "",
+        "headline-1": "Schneller Versand",
+        "subheader_2": "",
+        "headline-2": "12 Monate Garantie",
+        "subheader_3": "",
+        "headline-3": "Einfache Retouren",
+        "subheader_4": "",
+        "headline-4": "25.354+ glückliche Kundinnen"
+      }
+    },
+    "sk-benefits": {
+      "type": "sk-benefits",
+      "settings": {
+        "background": "#ffffff",
+        "headline": "",
+        "subline": "",
+        "pictext": "Text",
+        "imagesupport1": "shopify:\/\/shop_images\/sliced-pumpkin-pie.jpg",
+        "headline1": "100% Tierversuchsfrei",
+        "text1": "Mauris cursus, leo a hendrerit eleifend, diam ligula feugiat urna, eget maximus eros augue ut purus. Nullam fermentum neque urna, ut sagittis dui condimentum non.",
+        "imagesupport2": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+        "headline2": "Made in Germany",
+        "text2": "Mauris cursus, leo a hendrerit eleifend, diam ligula feugiat urna, eget maximus eros augue ut purus. Nullam fermentum neque urna, ut sagittis dui condimentum non.",
+        "imagesupport3": "shopify:\/\/shop_images\/two-people-surfing-in-blue-choppy-water.jpg",
+        "headline3": "Vegan & Cruelty Free",
+        "text3": "Vestibulum aliquam venenatis ornare. Sed vitae hendrerit lectus. Ut vehicula, dolor eu finibus ornare, orci justo interdum tellus, nec auctor augue risus nec magna.",
+        "imagesupport4": "shopify:\/\/shop_images\/small-business-interior.jpg",
+        "headline4": "100% Natürlich",
+        "text4": "Nullam convallis augue ut cursus pharetra. Curabitur fringilla ligula quis massa vulputate dignissim. Aliquam magna eros, pharetra eget feugiat eget, cursus a velit. Nunc aliquet tempus viverra.",
+        "btntext": "",
+        "helplink": ""
       }
     },
     "featured-collections": {
@@ -66,10 +77,10 @@
         "featured-collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
+            "collection": "bestseller",
+            "title": "Natürliche Kosmetik",
+            "grid_items_count": 4,
+            "button_text": "Bestseller ansehen"
           }
         }
       },
@@ -77,8 +88,8 @@
         "featured-collection-0"
       ],
       "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
+        "title": "Unsere",
+        "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false,
@@ -88,6 +99,7 @@
     },
     "collection-list": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -145,6 +157,7 @@
     },
     "featured-product": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "product-meta": {
           "type": "product_meta",
@@ -192,6 +205,7 @@
     },
     "timeline": {
       "type": "timeline",
+      "disabled": true,
       "blocks": {
         "item-0": {
           "type": "item",
@@ -235,6 +249,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "blocks": {
         "blog-0": {
           "type": "blog",
@@ -256,6 +271,7 @@
     },
     "shop-the-look": {
       "type": "shop-the-look",
+      "disabled": true,
       "blocks": {
         "look-0": {
           "type": "look",
@@ -298,54 +314,33 @@
         "show_mobile_product_info": false
       }
     },
-    "sk-benefits": {
-      "type": "sk-benefits",
-      "settings": {
-        "background": "#ffffff",
-        "headline": "Our Benefits",
-        "subline": "Subheadline",
-        "pictext": "Text",
-        "imagesupport1": "shopify:\/\/shop_images\/sliced-pumpkin-pie.jpg",
-        "headline1": "Benefit 1",
-        "text1": "Mauris cursus, leo a hendrerit eleifend, diam ligula feugiat urna, eget maximus eros augue ut purus. Nullam fermentum neque urna, ut sagittis dui condimentum non.",
-        "imagesupport2": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
-        "headline2": "Benefit 2",
-        "text2": "Mauris cursus, leo a hendrerit eleifend, diam ligula feugiat urna, eget maximus eros augue ut purus. Nullam fermentum neque urna, ut sagittis dui condimentum non.",
-        "imagesupport3": "shopify:\/\/shop_images\/two-people-surfing-in-blue-choppy-water.jpg",
-        "headline3": "Benefit 3",
-        "text3": "Vestibulum aliquam venenatis ornare. Sed vitae hendrerit lectus. Ut vehicula, dolor eu finibus ornare, orci justo interdum tellus, nec auctor augue risus nec magna.",
-        "imagesupport4": "shopify:\/\/shop_images\/small-business-interior.jpg",
-        "headline4": "Benefit 4",
-        "text4": "Nullam convallis augue ut cursus pharetra. Curabitur fringilla ligula quis massa vulputate dignissim. Aliquam magna eros, pharetra eget feugiat eget, cursus a velit. Nunc aliquet tempus viverra.",
-        "btntext": "Mehr Infos",
-        "helplink": "http:\/\/www.google.de"
-      }
-    },
     "sk-customerReview": {
       "type": "sk-customerReview",
       "settings": {
         "headline": "Produktbewertungen",
         "subline": "Unsere Kunden haben eine klare Meinung",
         "subline2": "Informationen zur Authentizität von Bewertungen",
-        "img_1": "shopify:\/\/shop_images\/close-up-of-a-hiker-adjusting-there-shoes-on-a-big-rick.jpg",
+        "img_1": "shopify:\/\/shop_images\/Review1.png",
         "review_headline_1": "Sebastian K.",
         "review_subline_1": "Barfußschuhe",
         "review_date_1": "21.02.2022",
         "review_text_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "img_2": "shopify:\/\/shop_images\/lacing-up-to-run.jpg",
+        "img_2": "shopify:\/\/shop_images\/Review2.png",
         "review_headline_2": "Andrea L",
         "review_subline_2": "Hausschuhe",
         "review_date_2": "16.03.2022",
         "review_text_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "img_3": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
+        "img_3": "shopify:\/\/shop_images\/1.CONTOURINGVertiefedeineWangenknochenmitdemSEPIASTICKfuereinestrahlendfrischeKakaobronze._1080x1350px.jpg",
         "review_headline_3": "Karl V.",
         "review_subline_3": "Comfort-Shoes",
         "review_date_3": "05.12.2021",
         "review_text_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "img_4": "shopify:\/\/shop_images\/1.CONTOURINGVertiefedeineWangenknochenmitdemSEPIASTICKfuereinestrahlendfrischeKakaobronze._1080x1350px_1.jpg",
         "review_headline_4": "Melanie G.",
         "review_subline_4": "Ortho Pro Hausschuhe",
         "review_date_4": "01.11.2021",
         "review_text_4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "img_5": "shopify:\/\/shop_images\/Screenshot_at_Nov_01_18-10-51.png",
         "review_headline_5": "Franz T.",
         "review_subline_5": "Walk Pro Barfußschuhe",
         "review_date_5": "03.09.2021",
@@ -355,18 +350,18 @@
     "sk-help": {
       "type": "sk-help",
       "settings": {
-        "background": "#efefef",
+        "background": "#ffffff",
         "headline": "Eure Fragen, unsere Antworten:",
         "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
         "pictext": "Text",
         "btntext": "Weitere Fragen anzeigen",
-        "helplink": "mailto:hallo@fundw.net"
+        "helplink": ""
       }
     },
     "sk-faq": {
       "type": "sk-faq",
       "settings": {
-        "background": "#efefef",
+        "background": "#ffffff",
         "headline": "Eure Fragen, unsere Antworten:",
         "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
         "faqHeadline": "Die 5 kritischsten Fragen",
@@ -388,13 +383,13 @@
   "order": [
     "slideshow",
     "sk-shopProperties",
+    "sk-benefits",
     "featured-collections",
     "collection-list",
     "featured-product",
     "timeline",
     "blog-posts",
     "shop-the-look",
-    "sk-benefits",
     "sk-customerReview",
     "sk-help",
     "sk-faq"
