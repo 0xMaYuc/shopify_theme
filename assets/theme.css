@@ -9565,7 +9565,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  * ----------------------------------------------------------------------------
  */
 .ProductMeta {
-  text-align: center;
+  text-align: left;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
@@ -9623,10 +9623,6 @@ shopify-payment-terms {
     margin: 0px 24px;
   }
 }
-.ProductMeta {
-  text-align: left;
-}
-
 .ProductMeta__Rating {
   margin-top: 4px;
   margin-bottom: 15px;
