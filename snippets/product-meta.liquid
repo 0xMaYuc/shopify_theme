@@ -30,6 +30,10 @@
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
   {%- endif -%}
 
+  <p class="sk_baumpflanzen">
+    Deine Bestellung pflanzt 1x Baum 🌳
+  </p>
+
     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
       	<div class="sk-discount">Du sparst {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</div>
   {%- endif -%}
