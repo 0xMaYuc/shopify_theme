@@ -52,6 +52,17 @@
   }
 }
 
+.sk_baumpflanzen {
+  color: #008b10;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 8px;
+  background-color: #f2fdf2;
+  border-radius: 15px;
+  padding: 5px 10px;
+  width: fit-content;
+}
+
 .sk_cart_shopProperties_Container {
   background-color: #f4f4f5;
   display: flex;
