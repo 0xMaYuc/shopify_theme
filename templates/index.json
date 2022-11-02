@@ -314,6 +314,25 @@
         "show_mobile_product_info": false
       }
     },
+    "sk-benefits-images": {
+      "type": "sk-benefits-images",
+      "settings": {
+        "background": "#f4f4f4",
+        "mainHeadline": "Unsere Vorteile",
+        "image1": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
+        "textShort1": "Gute Qualität",
+        "textLongHeadline1": "12 Monate Garantie",
+        "textLong1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "image2": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
+        "textShort2": "Versand mit DHL",
+        "textLongHeadline2": "Kostenloser DHL Versand",
+        "textLong2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "image3": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
+        "textShort3": "Sicher Zahlen",
+        "textLongHeadline3": "Sicherer Kauf auf Rechnung",
+        "textLong3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      }
+    },
     "sk-customerReview": {
       "type": "sk-customerReview",
       "settings": {
@@ -356,11 +375,6 @@
         "pictext": "Text",
         "btntext": "Weitere Fragen anzeigen",
         "helplink": ""
-      }
-    },
-    "sk-benefits-images": {
-      "type": "sk-benefits-images",
-      "settings": {
       }
     },
     "sk-faq": {
