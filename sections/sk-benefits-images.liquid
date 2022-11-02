@@ -18,21 +18,22 @@
               {{section.settings.textShort1}}
               </span>
             </div>
-            <img class="Image--lazyLoaded" alt="files/20.png" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/20_1024x1024.png?v=1657818645" width="600">   
+           <img src="{{ section.settings.image1 | img_url: '600px' }}" alt="{{section.settings.image1}}"  width="600px">
+             
          </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
           <div class="TripleBenefits__badge">
             <span>
               {{section.settings.textShort2}}
             </span>
           </div>
-          <img src="{{ section.settings.image2 | img_url: '600px' }}" alt="{{section.settings.image2}}" width="600px">
+          <img src="{{ section.settings.image2 | img_url: '600px' }}" alt="{{section.settings.image2}}"  width="600px">
         </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
           <div class="TripleBenefits__badge">
             <span>
               {{section.settings.textShort3}}
             </span>
           </div>
-          <img src="{{ section.settings.image3 | img_url: '600px' }}" alt="{{section.settings.image3}}">
+          <img src="{{ section.settings.image3 | img_url: '600px' }}" alt="{{section.settings.image3}}"  width="600px">
         </div></div>
           <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: none;">Next</button>
         </div>
