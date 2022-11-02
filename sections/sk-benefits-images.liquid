@@ -60,40 +60,126 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) { // <-- add this wrapper
-    var element = document.querySelectorAll('.TripleBenefits__reel-img');
-
-        if (element) {
-        
-          element.forEach(function(el, key){
-           
-
-             el.addEventListener('click', function () {
-                console.log(key);
-
-
-                var key_new = key + 1;
-                const elem = document.getElementById('TB_info_' + key_new);
-                elem.className = "TripleBenefits__details-info TripleBenefits__details-info--active";
-
-
-                el.classList.toggle("TripleBenefits__reel-img--active");
-                 element.forEach(function(ell, els){
-                     if(key !== els) {
-                         ell.classList.remove('TripleBenefits__reel-img--active');
-
-                         var els_new = els + 1;
-                         const elem = document.getElementById('TB_info_' + els_new);
-                         elem.className = "TripleBenefits__details-info";
-                     }
-                     
-                 });
-                    
-
-             });
-          });
+  <script type="text/javascript">
+    document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+  
+    let imageItems = document.getElementsByClassName("TripleBenefits__reel-img");
+    let infoItems = document.getElementsByClassName("TripleBenefits__details-info");
+  
+    function removeAllOthers(){
+      let activeOthers = document.getElementsByClassName("TripleBenefits__reel-img--active");
+      for(let item of activeOthers){
+        item.classList.remove("TripleBenefits__reel-img--active");
+      }
+    }
+  
+    function removeAllOtherDetails(){
+      let activeInfos = document.getElementsByClassName("TripleBenefits__details-info--active");
+      for(let item of activeInfos){
+        item.classList.remove("TripleBenefits__details-info--active");
+      }
+    }
+  
+    for(let i = 0; i < imageItems.length; i++) {
+  
+      imageItems[i].addEventListener("click", (e) => {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        } else {
+         e.preventDefault();
+          e.stopPropagation();
+          removeAllOthers();
+          imageItems[i].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[i].classList.toggle("TripleBenefits__details-info--active");
         }
-    });
+      })
+  
+    }
+  
+    let container = document.getElementsByClassName('TripleBenefits__reel')[0];
+    let colToScrollTo = imageItems[1];
+    //Scroll to middle
+    container.scrollLeft = (colToScrollTo.offsetLeft - 40);
+  
+    window.onload = () => {
+  
+      let $nArrow = $('.slider-container--triple .sliderTriple').find('.slick-next'),
+          $pArrow = $('.slider-container--triple .sliderTriple').find('.slick-prev');
+  
+      let tripleSliderSettings = {
+        dots: true,
+        infinite: false,
+        autoplay: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        variableWidth: true,
+        prevArrow: $pArrow,
+        nextArrow:  $nArrow,
+        mobileFirst: false,
+        responsive: [
+          {
+            breakpoint: 9999,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: false,
+              centerMode: true,
+              initialSlide: 1
+            }
+          }
+        ]
+      };
+  
+      $('.slider-container--triple .sliderTriple').slick(tripleSliderSettings);
+  
+      function reInitSlider() {
+        if(!$(".sliderTriple").hasClass("slick-initialized")){
+          $(".sliderTriple").slick(tripleSliderSettings);
+        }
+      }
+  
+      $(".sliderTriple").on('breakpoint', (event, slick, breakpoint) => {
+        if(breakpoint === 1024){
+          reInitSlider();
+        }else if(breakpoint === 768){
+          reInitSlider();
+        }
+      });
+  
+      $(".sliderTriple").on('afterChange', (slick, currentSlide) => {
+        if(window.matchMedia("(max-width: 768px)")){
+          removeAllOthers();
+          imageItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__details-info--active");
+        }
+        console.log("currentbr", currentSlide.currentBreakpoint)
+        console.log("currentSLide", currentSlide.currentSlide)
+      });
+   
+      $(window).on('resize', function(){
+        if($(window).width() < 768){
+          reInitSlider();
+          removeAllOthers();
+          imageItems[1].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[1].classList.toggle("TripleBenefits__details-info--active");
+        }else if($(window).width() < 1024) {
+          reInitSlider();
+          removeAllOthers();
+          imageItems[1].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[1].classList.toggle("TripleBenefits__details-info--active");
+        }
+      });
+    }
+  
+  </script>
   </script>
 
 
