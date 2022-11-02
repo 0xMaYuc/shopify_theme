@@ -71,11 +71,11 @@
             
              el.addEventListener('click', function () {
                 console.log(key);
-             
+                const elem = document.getElementById('TB_info_' + key);
+                console.log(elem);
                 
                 el.classList.toggle("TripleBenefits__reel-img--active");
-                
-                element2.classList.toggle("TripleBenefits__details-info--active");
+              
                  element.forEach(function(ell, els){
                      if(key !== els) {
                          ell.classList.remove('TripleBenefits__reel-img--active');
