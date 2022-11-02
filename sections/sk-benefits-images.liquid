@@ -15,11 +15,11 @@
         <div class="slider sliderTriple slider-custom">
           
           <div class="TripleBenefits__reel-img TripleBenefits__reel-img--active" style="" aria-hidden="true" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-          <div class="TripleBenefits__badge">
-            <span>
-             {{section.settings.textShort1}}
-            </span>
-          </div>
+            <div class="TripleBenefits__badge">
+              <span>
+              {{section.settings.textShort1}}
+              </span>
+            </div>
            <img src="{{ section.settings.image1 | img_url: '600px' }}" alt="{{section.settings.image1}}">
              
          </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
@@ -70,177 +70,14 @@
       padding: 50px 0;
     }
 
-    
-.TripleBenefits {
-  overflow: hidden;
-}
-
-.TripleBenefits__Header {
-  margin-bottom: 0;
-  padding-top: 44px;
-  display: block;
-  text-align: center;
-}
-
-.TripleBenefits__Header h3 {
-  margin: 0 auto;
-  font-size: 22px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  font-style: var(--heading-font-style);
-  color: var(--heading-color);
-  transition: color 0.2s ease-in-out;
-  max-width: 80%;
-}
-
-.TripleBenefits__reel {
-  padding: 40px 0 24px;
-  position: relative;
-}
-
-.TripleBenefits__reel::after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #f4f4f4;
-  clear: both;
-}
-
-.TripleBenefits__reel-img {
-  max-height: 520px;
-  max-width: 480px;
-  /*min-width: 300px;*/
-  object-fit: cover;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s 0s ease-in-out;
-}
-
-.TripleBenefits__badge {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 8px;
-  text-align: center;
-  line-height: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-}
-
-.TripleBenefits__reel-track {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  max-width: 1640px;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.TripleBenefits__details {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 64px;
-}
-
-.TripleBenefits__details-info {
-  text-align: center;
-  display: none;
-  opacity: 0;
-  max-width: 764px;
-  position: relative;
-}
-
-@media screen and (min-width: 768px){
-  .TripleBenefits__reel-img {
-    width: 480px;
+    TripleBenefits__reel-img > img {
+      transition:transform 0.25s ease;
   }
-
-  .TripleBenefits__reel-img--active {
-    transform: scale(1.14);
-    max-height: none;
-    transition: all 0.2s 0s ease-in-out;
-    z-index: 3;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+  
+  TripleBenefits__reel-img > img:hover {
+      -webkit-transform:scale(1.5);
+      transform:scale(1.5);
   }
-
-  .TripleBenefits__reel {
-    padding: 80px 14px 24px;
-  }
-
-  .TripleBenefits__reel-img:nth-of-type(2) {
-    margin: 0 30px;
-  }
-
-  .TripleBenefits__details {
-    padding-top: 24px;
-  }
-}
-
-.TripleBenefits__details-info h2{
-  font-size: 20px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  font-style: var(--heading-font-style);
-  color: var(--heading-color);
-  transition: color 0.2s ease-in-out;
-}
-
-.TripleBenefits__details-info p{
-  font-weight: 200;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 26px;
-}
-
-.TripleBenefits__details-info--active {
-  opacity: 1;
-  display: block;
-  position: relative;
-  animation: 0.9s 0s slideInBottomFade ease-in-out;
-}
-
-@media screen and (min-width: 1041px) {
-  .TripleBenefits__Header h3 {
-
-  }
-
-  .TripleBenefits__details-info h2 {
-
-  }
-
-  .TripleBenefits__details-info p {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0;
-  }
-
-  .TripleBenefits__details {
-    padding-top: 44px;
-    padding-bottom: 64px;
-  }
-
-  .TripleBenefits__reel{
-    padding: 80px 20px;
-  }
-
-  .TripleBenefits__Header {
-    margin-bottom: 64px;
-    padding-top: 44px;
-  }
-}
   
   </style>
   
