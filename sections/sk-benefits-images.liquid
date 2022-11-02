@@ -75,7 +75,7 @@
                 const elem = document.getElementById('TB_info_' + key_new);
                 elem.className = "TripleBenefits__details-info--active";
                 elem.forEach(function(ell2, els2){
-                  if(key !== els2) {
+                  if(key_new !== els2) {
                       ell2.classList.remove('TripleBenefits__details-info--active');
                   }
                    console.log(els2);
