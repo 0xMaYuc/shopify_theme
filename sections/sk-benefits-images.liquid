@@ -60,12 +60,83 @@
 </div>
 
 
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+
   
   <style>
     .sk-benefits-image-gallery {
       background: {{ section.settings.background }};
       padding: 50px 0;
     }
+
+
+     
+/*Slick Slider*/
+
+.slider-container {
+  position: relative;
+  /*margin-top: 10px;*/
+  left: 0;
+  height: 100%;
+  width:100%;
+}
+
+.slider-container--triple {
+  position: relative;
+  /*margin-top: 10px;*/
+  left: 0;
+  height: 100%;
+  width:100%;
+}
+
+.slider-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*height: 80px;*/
+}
+
+@media screen and (min-width: 768px){
+  .sliderTriple {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-container--triple .slick-arrow {
+    display: none;
+  }
+}
+
+.slick-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.center .slick-center h3{
+  -moz-transform:scale(1.08);
+  -ms-transform:scale(1.08);
+  -o-transform:scale(1.08);
+  -webkit-transform:scale(1.08);
+  color:#e67e22;opacity:1;
+  transform:scale(1.08);
+}
+
+.TripleBenefits__reel-track .slick-dots li button:before {
+  font-size: 10px;
+}
 
 /*TripleBenefits*/
 
