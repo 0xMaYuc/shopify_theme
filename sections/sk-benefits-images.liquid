@@ -70,7 +70,7 @@
           element.forEach(function(el, key){
             
              el.addEventListener('click', function () {
-                console.log(key);
+                console.log(el);
                 el.classList.toggle("TripleBenefits__reel-img--active");
                  element.forEach(function(ell, els){
                      if(key !== els) {
@@ -84,7 +84,7 @@
                 var key_new = key + 1;
                 const elem = document.getElementById('TB_info_' + key_new);
                 elem.className = "TripleBenefits__details-info--active";
-                
+
              });
           });
         }
