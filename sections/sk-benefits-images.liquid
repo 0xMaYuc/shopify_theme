@@ -68,11 +68,7 @@
           element.forEach(function(el, key){
             var key_new = key + 1;
             const elem = document.getElementById('TB_info_' + key_new);
-            if (key_new = 1) {
-              elem.className = "TripleBenefits__details-info--active";
-            }
-            elem.className = "TripleBenefits__details-info";
-
+          
              el.addEventListener('click', function () {
                 console.log(key);
                 el.classList.toggle("TripleBenefits__reel-img--active");
@@ -87,7 +83,7 @@
                 
                 var key_new = key + 1;
                 const elem = document.getElementById('TB_info_' + key_new);
-                elem.className = "TripleBenefits__details-info--active";
+                elem.classList.toggle = "TripleBenefits__details-info--active";
                
 
              });
