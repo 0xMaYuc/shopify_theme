@@ -358,6 +358,11 @@
         "helplink": ""
       }
     },
+    "sk-benefits-image-gallery": {
+      "type": "sk-benefits-image-gallery",
+      "settings": {
+      }
+    },
     "sk-faq": {
       "type": "sk-faq",
       "settings": {
@@ -390,6 +395,7 @@
     "timeline",
     "blog-posts",
     "shop-the-look",
+    "sk-benefits-image-gallery",
     "sk-customerReview",
     "sk-help",
     "sk-faq"

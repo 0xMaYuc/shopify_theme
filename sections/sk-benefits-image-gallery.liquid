@@ -1,0 +1,341 @@
+<section class="Section sk-benefits-image-gallery Section--spacingNormal">
+  
+  
+
+
+  <div class="TripleBenefits">
+    <div class="TripleBenefits__Header">
+      <h3 class="Heading">{{section.settings.mainHeadline}}</h3>
+    </div>
+  <div class="TripleBenefits__Wrapper">
+    <div class="TripleBenefits__reel">
+      <div class="TripleBenefits__reel-track">
+      
+      <div class="slider-container--triple">
+        <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: none;">Previous</button>
+        <div class="slider sliderTriple slider-custom">
+          
+          <div class="TripleBenefits__reel-img TripleBenefits__reel-img--active" style="" aria-hidden="true" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+          <div class="TripleBenefits__badge">
+            <span>
+             {{section.settings.textShort1}}
+            </span>
+          </div>
+           <img src="{{ section.settings.image1 | img_url: '600px' }}" alt="{{section.settings.image1}}">
+             
+         </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+          <div class="TripleBenefits__badge">
+            <span>
+              {{section.settings.textShort2}}
+            </span>
+          </div>
+          <img class="Image--lazyLoaded" alt="files/benefit_freiluftkind_versand_da94a1f3-b628-40d9-8ec1-992392801bf6.jpg" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/benefit_freiluftkind_versand_da94a1f3-b628-40d9-8ec1-992392801bf6_1024x1024.jpg?v=1659182815" width="600">
+        </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+          <div class="TripleBenefits__badge">
+            <span>
+              {{section.settings.textShort3}}
+            </span>
+          </div>
+          <img class="Image--lazyLoaded" alt="files/freiluftkind_runner2_blau_1.jpg" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/freiluftkind_runner2_blau_1_1024x1024.jpg?v=1659022775" width="600">
+        </div></div>
+          <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: none;">Next</button>
+        </div>
+      
+      </div>
+    </div>
+    <div class="TripleBenefits__details">
+      <div class="Container">
+        <div class="TripleBenefits__details-info TripleBenefits__details-info--active" id="TB_info_1">
+          <h2 class="Heading">{{section.settings.textLongHeadline1}}</h2>
+          <p>{{section.settings.textLong1}}</p>
+        </div>
+        <div class="TripleBenefits__details-info" id="TB_info_2">
+          <h2 class="Heading">{{section.settings.textLongHeadline2}}</h2>
+          <p>{{section.settings.textLong2}}</p>
+        </div>
+        <div class="TripleBenefits__details-info" id="TB_info_3">
+          <h2 class="Heading">{{section.settings.textLongHeadline3}}</h2>
+          <p>{{section.settings.textLong3}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+  
+  <style>
+    .sk-benefits-image-gallery {
+      background: {{ section.settings.background }};
+      padding: 50px 0;
+    }
+
+    
+.TripleBenefits {
+  overflow: hidden;
+}
+
+.TripleBenefits__Header {
+  margin-bottom: 0;
+  padding-top: 44px;
+  display: block;
+  text-align: center;
+}
+
+.TripleBenefits__Header h3 {
+  margin: 0 auto;
+  font-size: 22px;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  color: var(--heading-color);
+  transition: color 0.2s ease-in-out;
+  max-width: 80%;
+}
+
+.TripleBenefits__reel {
+  padding: 40px 0 24px;
+  position: relative;
+}
+
+.TripleBenefits__reel::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f4f4f4;
+  clear: both;
+}
+
+.TripleBenefits__reel-img {
+  max-height: 520px;
+  max-width: 480px;
+  /*min-width: 300px;*/
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s 0s ease-in-out;
+}
+
+.TripleBenefits__badge {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 8px;
+  text-align: center;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.TripleBenefits__reel-track {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1640px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.TripleBenefits__details {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.TripleBenefits__details-info {
+  text-align: center;
+  display: none;
+  opacity: 0;
+  max-width: 764px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px){
+  .TripleBenefits__reel-img {
+    width: 480px;
+  }
+
+  .TripleBenefits__reel-img--active {
+    transform: scale(1.14);
+    max-height: none;
+    transition: all 0.2s 0s ease-in-out;
+    z-index: 3;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+  }
+
+  .TripleBenefits__reel {
+    padding: 80px 14px 24px;
+  }
+
+  .TripleBenefits__reel-img:nth-of-type(2) {
+    margin: 0 30px;
+  }
+
+  .TripleBenefits__details {
+    padding-top: 24px;
+  }
+}
+
+.TripleBenefits__details-info h2{
+  font-size: 20px;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  color: var(--heading-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.TripleBenefits__details-info p{
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.TripleBenefits__details-info--active {
+  opacity: 1;
+  display: block;
+  position: relative;
+  animation: 0.9s 0s slideInBottomFade ease-in-out;
+}
+
+@media screen and (min-width: 1041px) {
+  .TripleBenefits__Header h3 {
+
+  }
+
+  .TripleBenefits__details-info h2 {
+
+  }
+
+  .TripleBenefits__details-info p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .TripleBenefits__details {
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+
+  .TripleBenefits__reel{
+    padding: 80px 20px;
+  }
+
+  .TripleBenefits__Header {
+    margin-bottom: 64px;
+    padding-top: 44px;
+  }
+}
+  
+  </style>
+  
+  {% schema %}
+  {
+    "name": "SK - Benefits with Image Gallery",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "mainHeadline",
+        "label": "Überschrift",
+        "default": "Unsere Vorteile"
+      },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Bild",
+        "info": "380 x 380px .jpg recommended"
+      },
+      {
+        "type": "text",
+        "id": "textShort1",
+        "label": "Kurzer Text",
+        "default": "Gute Qualität"
+      },
+      {
+        "type": "text",
+        "id": "textLongHeadline1",
+        "label": "Langer Text Headline",
+        "default": "12 Monate Garantie"
+      },
+      {
+        "type": "text",
+        "id": "textLong1",
+        "label": "Langer Text Absatz"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Bild 2",
+        "info": "380 x 380px .jpg recommended"
+      },
+      {
+        "type": "text",
+        "id": "textShort2",
+        "label": "Kurzer Text 2",
+        "default": "Versand mit DHL"
+      },
+      {
+        "type": "text",
+        "id": "textLongHeadline2",
+        "label": "Langer Text Headline 2",
+        "default": "Kostenloser DHL Versand"
+      },
+      {
+        "type": "text",
+        "id": "textLong2",
+        "label": "Langer Text Absatz 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Bild 3",
+        "info": "380 x 380px .jpg recommended"
+      },
+      {
+        "type": "text",
+        "id": "textShort3",
+        "label": "Kurzer Text 3",
+        "default": "Sicher Zahlen"
+      },
+      {
+        "type": "text",
+        "id": "textLongHeadline3",
+        "label": "Langer Text Headline 3",
+        "default": "Sicherer Kauf auf Rechnung"
+      },
+      {
+        "type": "text",
+        "id": "textLong3",
+        "label": "Langer Text Absatz 3"
+      }
+      
+     
+    ],
+    "presets": [{
+      "name": "SK - Benefits with Image Gallery",
+      "category": "Custom"
+    }]
+  }
+  {% endschema %}
