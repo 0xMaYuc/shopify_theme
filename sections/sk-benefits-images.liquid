@@ -61,16 +61,16 @@
 
 
 <script>
-  (e) => {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {} else {
-      e.preventDefault();
-      e.stopPropagation();
-      removeAllOthers();
-      imageItems[i].classList.toggle("TripleBenefits__reel-img--active");
-      removeAllOtherDetails();
-      infoItems[i].classList.toggle("TripleBenefits__details-info--active");
-    }
-  }
+ // Add active class to the current button (highlight it)
+var header = document.getElementById("slick-slide00");
+var btns = header.getElementsByClassName("TripleBenefits__reel-img");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("TripleBenefits__reel-img--active");
+  current[0].className = current[0].className.replace(" TripleBenefits__reel-img--active", "");
+  this.className += " TripleBenefits__reel-img--active";
+  });
+}
   </script>
 
 
