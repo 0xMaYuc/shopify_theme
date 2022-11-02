@@ -9348,6 +9348,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     right: 0;
     top: 0;
     height: 100%;
+    max-height: auto !important;
   }
 
   @media screen and (min-width: 1008px) {
