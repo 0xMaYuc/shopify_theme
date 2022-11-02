@@ -65,6 +65,7 @@
 var header = document.getElementById("slick-slide00");
 var btns = header.getElementsByClassName("TripleBenefits__reel-img");
 for (var i = 0; i < btns.length; i++) {
+  console.log ("test");
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("TripleBenefits__reel-img--active");
   current[0].className = current[0].className.replace(" TripleBenefits__reel-img--active", "");
