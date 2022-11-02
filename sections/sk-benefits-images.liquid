@@ -66,17 +66,22 @@
         if (element) {
         
           element.forEach(function(el, key){
-            var key_new = key + 1;
-            const elem = document.getElementById('TB_info_' + key_new);
-            elem.className = "TripleBenefits__details-info--active";
+           
 
              el.addEventListener('click', function () {
                 console.log(key);
+
+
+                var key_new = key + 1;
+                const elem = document.getElementById('TB_info_' + key_new);
+                elem.className = "TripleBenefits__details-info--active";
+
 
                 el.classList.toggle("TripleBenefits__reel-img--active");
                  element.forEach(function(ell, els){
                      if(key !== els) {
                          ell.classList.remove('TripleBenefits__reel-img--active');
+                         elem.className = "TripleBenefits__details-info";
                      }
                       console.log("els: " + els);
                  });
