@@ -63,8 +63,7 @@
 
   document.addEventListener("DOMContentLoaded", function(event) { // <-- add this wrapper
     var element = document.querySelectorAll('.TripleBenefits__reel-img');
-    var element2 = document.querySelectorAll('.TripleBenefits__details-info');
-    
+
         if (element) {
         
           element.forEach(function(el, key){
@@ -74,7 +73,7 @@
 
                 var key_new = key + 1;
                 const elem = document.getElementById('TB_info_' + key_new);
-                console.log(elem);
+                elem.classList.toggle("TripleBenefits__details-info");
 
                 el.classList.toggle("TripleBenefits__reel-img--active");
               
