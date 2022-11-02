@@ -18,8 +18,7 @@
               {{section.settings.textShort1}}
               </span>
             </div>
-           <img src="{{ section.settings.image1 | img_url: '600px' }}" alt="{{section.settings.image1}}">
-             
+            <img class="Image--lazyLoaded" alt="files/20.png" src="//cdn.shopify.com/s/files/1/0632/5282/4281/files/20_1024x1024.png?v=1657818645" width="600">   
          </div><div class="TripleBenefits__reel-img" style="" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
           <div class="TripleBenefits__badge">
             <span>
@@ -59,18 +58,6 @@
   </div>
 </div>
 
-<script>
-  // Add active class to the current button (highlight it)
-  var header = document.getElementById("slick-slide00");
-  var btns = header.getElementsByClassName("TripleBenefits__reel-img");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("TripleBenefits__reel-img--active");
-    current[0].className = current[0].className.replace(" TripleBenefits__reel-img--active", "");
-    this.className += " TripleBenefits__reel-img--active";
-    });
-  }
-  </script>
 
   
   <style>
