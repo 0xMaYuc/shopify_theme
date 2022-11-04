@@ -68,7 +68,7 @@
         "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394"
       ],
       "settings": {
-        "image_size": "large",
+        "image_size": "medium",
         "stack_images": false,
         "show_thumbnails": true,
         "enable_image_zoom": true,
