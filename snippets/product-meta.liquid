@@ -40,7 +40,11 @@
     
 
   
-  {%- if product.template_suffix != 'coming-soon' -%}
+  
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+{%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
 
       {%- if settings.currency_code_enabled -%}
