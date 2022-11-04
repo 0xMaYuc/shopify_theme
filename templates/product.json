@@ -53,8 +53,8 @@
         "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394": {
           "type": "content",
           "settings": {
-            "title": "Test",
-            "content": "<p>Hallo Test<\/p>",
+            "title": "Anwendung Tab",
+            "content": "",
             "page": "anwendung-2"
           }
         },
@@ -65,6 +65,14 @@
             "content": "",
             "page": "versand-rucksendung"
           }
+        },
+        "2fde2c00-2310-4c7c-8eb5-42e9909c5fbf": {
+          "type": "content",
+          "settings": {
+            "title": "",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -74,7 +82,8 @@
         "quantity_selector",
         "buy_buttons",
         "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394",
-        "f0ff2d82-4d29-4dab-8e63-a8a21685e2b5"
+        "f0ff2d82-4d29-4dab-8e63-a8a21685e2b5",
+        "2fde2c00-2310-4c7c-8eb5-42e9909c5fbf"
       ],
       "settings": {
         "image_size": "medium",
