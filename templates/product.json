@@ -73,6 +73,14 @@
             "content": "",
             "page": ""
           }
+        },
+        "8ccaa234-27f6-42de-8b4b-601d1d696a79": {
+          "type": "content",
+          "settings": {
+            "title": "{{ product.metafields.custom.tab_1_title.value }}",
+            "content": "<p>{{ product.metafields.custom.tab_1_content | metafield_tag }}<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -83,7 +91,8 @@
         "buy_buttons",
         "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394",
         "f0ff2d82-4d29-4dab-8e63-a8a21685e2b5",
-        "2fde2c00-2310-4c7c-8eb5-42e9909c5fbf"
+        "2fde2c00-2310-4c7c-8eb5-42e9909c5fbf",
+        "8ccaa234-27f6-42de-8b4b-601d1d696a79"
       ],
       "settings": {
         "image_size": "medium",
