@@ -317,10 +317,10 @@
     "sk-benefits-images": {
       "type": "sk-benefits-images",
       "settings": {
-        "mainHeadline": "Unsere Vorteile",
+        "mainHeadline": "WAS FÜR UNS SPRICHT",
         "image1": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
-        "textShort1": "Gute Qualität",
-        "textLongHeadline1": "12 Monate Garantie",
+        "textShort1": "Schönheit Garantiert",
+        "textLongHeadline1": "Schönheits Garantie",
         "textLong1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "image2": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
         "textShort2": "Versand mit DHL",
