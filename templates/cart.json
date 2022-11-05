@@ -10,12 +10,15 @@
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
-        "title": "Recently viewed",
+        "title": "Kürzlich angesehen",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false
       }
     }
   },
-  "order": ["main", "recently-viewed-products"]
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
 }
