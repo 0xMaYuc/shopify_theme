@@ -93,25 +93,6 @@
         "enable_video_looping": false
       }
     },
-    "50851bf1-f53e-4824-b161-47901ad671fd": {
-      "type": "sk-benefits",
-      "settings": {
-        "background": "#ffffff",
-        "headline": "Headline",
-        "subline": "Subline",
-        "pictext": "Text",
-        "headline1": "Headline1",
-        "text1": "text1",
-        "headline2": "Headline2",
-        "text2": "text2",
-        "headline3": "Headline3",
-        "text3": "text3",
-        "headline4": "Headline4",
-        "text4": "text4",
-        "btntext": "Text",
-        "helplink": "\/pages\/contact"
-      }
-    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "settings": {
@@ -142,7 +123,6 @@
   "order": [
     "sk-customerCount",
     "main",
-    "50851bf1-f53e-4824-b161-47901ad671fd",
     "loox-product-reviews-app-section",
     "product-recommendations",
     "recently-viewed-products"
