@@ -563,6 +563,7 @@ ul.SK_Payment_Methods {
 .SK_ProductForm__ShopProperty_Container {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #f4f4f5;
   border-radius: 4px;
   padding: 8px 4px;
@@ -575,11 +576,6 @@ ul.SK_Payment_Methods {
   margin-left: 15px;
   margin-right: 10px;
 }
-
-@media screen and (min-width: 768px) {
-  .SK_ProductForm__ShopProperty_Image {
-    margin-left: 54px;
-  }
 
 .SK_ProductForm__ShopProperty_Text {
   color: #000;
