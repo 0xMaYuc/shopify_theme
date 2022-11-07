@@ -520,6 +520,143 @@
             </div>        
           {%- endif -%}
 
+          {% if template contains 'product' %}
+            <div id="sticky-atc" class="sticky-atc sticky-atc--hidden">
+              <form action="/cart/add" method="post">
+                <div class="quantityAtcRow">
+                  {% comment %}<img src="{{ variant.image.src | img_url: 'small' }}" alt="Variant Image">{% endcomment %}
+                  <div class="sticky-atc-left">
+                    <select class="Button" name="id">
+                      {% for variant in product.variants %}
+                        <option value="{{variant.id}}">{{variant.title}}</option>
+                      {% endfor %}
+                    </select>
+                    <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+                  </div>
+                  <button type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" data-action="add-to-cart"><span>In den Warenkorb</span></button>
+                </div>
+                {% comment %}<button type="submit">Add To Cart</button>{% endcomment %}
+              </form>
+            </div>
+          
+            <script>
+              let stickyAtc = document.getElementById("sticky-atc");
+              let limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+              let triple = limit / 4;
+          
+              let checkIfTwenty = function() {
+                let y = window.scrollY;
+                if (y >= triple) {
+                  if(stickyAtc.classList.contains("sticky-atc--hidden")){
+                    stickyAtc.classList.remove("sticky-atc--hidden");
+                  }
+                } else {
+                  if(!stickyAtc.classList.contains("sticky-atc--hidden")){
+                    stickyAtc.classList.add("sticky-atc--hidden");
+                  }
+                }
+              };
+          
+              window.addEventListener("scroll", checkIfTwenty);
+            </script>
+          
+            <style>
+              .sticky-atc {
+                opacity: 1;
+                z-index: 9;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                visibility: visible;
+                pointer-events: all;
+              }
+          
+              .sticky-atc-left {
+                width: 100%;
+                align-items: center;
+                display: flex;
+              }
+          
+              .sticky-atc--hidden {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: all 0.3s 0s ease-in-out;
+              }
+          
+              #sticky-atc form{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                background: #fff;
+                padding: 4px 20px;
+                border-top: 1px solid #e2e2e2;
+              }
+          
+              #sticky-atc {
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+              }
+          
+              #sticky-atc .ProductForm__QuantitySelector{
+                margin-left: auto;
+              }
+          
+              #sticky-atc .ProductMeta__Price {
+                margin-left: auto;
+                color: #BCA170;
+                font-size: 24px;
+              }
+          
+              #sticky-atc .ProductForm__AddToCart {
+                width: auto;
+                display: inline-flex;
+                height: 45px;
+                white-space: nowrap;
+                margin-left: 40px;
+                background-color: var(--button-background);
+                color: var(--button-text-color);
+              }
+          
+              #sticky-atc .quantityAtcRow select {
+                height: 45px;
+                margin-right: 20px;
+                width: 100%;
+                max-width: 410px;
+                padding: 14px 28px;
+                border-radius: 0;
+                border: 1px solid rgba(var(--text-color-light-rgb), 0.2);
+              }
+          
+              #sticky-atc .quantityAtcRow {
+                height: 57px;
+                display: flex;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                align-items: center;
+              }
+          
+              @media screen and (max-width: 768px){
+                #sticky-atc .quantityAtcRow {
+                  height: auto;
+                  flex-wrap: wrap;
+                }
+          
+                #sticky-atc .ProductForm__AddToCart {
+                  display: block;
+                  width: 100%;
+                  margin-left: 0px;
+                  margin-top: 8px;
+                }
+          
+                #sticky-atc .quantityAtcRow select {
+                  width: 100%;
+                  max-width: max-content;
+                }
+              }
+            </style>
+          {% endif %}
+
         </div>
       </div>
     </div>
