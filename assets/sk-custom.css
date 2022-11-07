@@ -566,6 +566,12 @@ ul.SK_Payment_Methods {
     margin: 24px auto;
   }
 }
+@media screen and (max-width: 415px) {
+  #judgeme_product_reviews {
+    max-width: 346px;
+    margin: 10px auto;
+  }
+}
 
 /* SK_ShopProperties */
 
