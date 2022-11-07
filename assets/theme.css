@@ -9327,6 +9327,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin: 0 auto;
 }
 
+.Product__Aside {
+  padding: 0 24px;
+}
+
 .Product__Info--noGallery {
   padding-top: 24px;
 }
