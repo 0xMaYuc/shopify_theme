@@ -1,0 +1,11 @@
+<script id="icartSideCartMinJs" type="text/javascript" async="false" src="https://cdnicart.identixweb.com/react_build/icart.bundle.js"></script>
+<style>.icartShopifyCartContent {visibility: unset;}</style>
+<script>
+    var productObj = {{ all_products["2-in-1-beauty-bag"] | json }};
+    typeof productObj == "object" ? icartProductObj[7561950626007] = productObj : "";
+
+    var productObj = {{ all_products["nude-sponge-box"] | json }};
+    typeof productObj == "object" ? icartProductObj[6718297637032] = productObj : "";
+</script>
+<div class="icart icart-datepicker icart-slipper "></div>
+<link rel="stylesheet" id="icartMinCss" type="text/css" href="https://cdnicart.identixweb.com/assets/css/icart_fronted.min.css" media="all">
