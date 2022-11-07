@@ -528,11 +528,22 @@
               <div class="quantityAtcRow">
                 {% comment %}<img src="{{ variant.image.src | img_url: 'small' }}" alt="Variant Image">{% endcomment %}
                 <div class="sticky-atc-left">
+
+                  <div class="QuantitySelector QuantitySelector--large">
+                    {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
+
+                    <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
+                    <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
+                    <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
+                  </div>
+
+                    {% comment %}
                   <select class="Button" name="id">
                     {% for variant in product.variants %}
                       <option value="{{variant.id}}">{{variant.title}}</option>
                     {% endfor %}
                   </select>
+                  {% endcomment %}
                   <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
                 </div>
                 <button type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" data-action="add-to-cart"><span>In den Warenkorb</span></button>
