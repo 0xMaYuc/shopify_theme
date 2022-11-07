@@ -527,10 +527,7 @@
             <form action="/cart/add" method="post">
               <div class="quantityAtcRow">
                 <div class="sticky-atc-left">
-
-
-
-                
+{% comment %}
                   <div class="QuantitySelector QuantitySelector--large">
                     {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
@@ -539,17 +536,14 @@
                     <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                   </div>
 
-  {% comment %}
-                    
+
+OLD VERSION WITH VARIANT SELECTOR     
                       <select class="Button" name="id">
                         {% for variant in product.variants %}
                           <option value="{{variant.id}}">{{variant.title}}</option>
                         {% endfor %}
                       </select>
-                  {% endcomment %}
-
-
-
+{% endcomment %}
 
                   {%- if settings.currency_code_enabled -%}
                     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
@@ -568,6 +562,7 @@
                   {%- endif -%}
 
 {% comment %}
+OLD VERSION ONLY WITH PRICE
                   <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
 {% endcomment %}
                 </div>
