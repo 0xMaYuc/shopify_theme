@@ -576,6 +576,11 @@ ul.SK_Payment_Methods {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .SK_ProductForm__ShopProperty_Image {
+    margin-left: 54px;
+  }
+
 .SK_ProductForm__ShopProperty_Text {
   color: #000;
   font-size: 8px;
