@@ -10,7 +10,7 @@
             </span>
           </div>
           <div class="shopProperty">
-            <i class="fa-solid fa-badge-check fa-2xl""></i>
+            <i class="fa-solid fa-badge-check fa-2xl"></i>
             <span>
               <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
               <p>{{ section.settings.subheader-2 }}</p>
@@ -41,6 +41,10 @@
     background: {{ section.settings.background }};
     color: {{ section.settings.text_color }};
   }
+
+  .shopProperty > i {
+  margin-right:15px;
+}
 
   .shopProperty h4 {
     color: {{ section.settings.text_color }};
