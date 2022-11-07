@@ -549,8 +549,8 @@
                   {% endcomment %}
 
 
-{% comment %}
- Rabatt-berechnung (CSS FEHLT)
+
+
                   {%- if settings.currency_code_enabled -%}
                     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
                       <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
@@ -566,9 +566,10 @@
                       <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
                     {%- endif -%}
                   {%- endif -%}
-{% endcomment %}
 
+{% comment %}
                   <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+{% endcomment %}
                 </div>
                 <button type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" data-action="add-to-cart"><span>In den Warenkorb</span></button>
               </div>
