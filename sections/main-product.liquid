@@ -587,14 +587,15 @@ This is the root container for the zoom functionality. Must not be removed, as o
 <script>
   const btn = document.getElementById('intoCartButton');
   btn.addEventListener('click', function handleClick() {
-    btn.textContent = 'Gute Wahl! 👍';
-    //var lineBreak = document.createElement("br");
-    //var textStart = 'Gute Wahl! 👍';
-    //var textEnd = ' Dein Versand ist kostenlos.';
-    // btn.textContent = textStart +' '+ lineBreak +' '+ textEnd;
+    setTimeout(changeText, 800);
 
+  //  btn.textContent = 'Gute Wahl! 👍';
+  
     setTimeout(changeBackText, 2000)
   });
+  function changeText() {
+      btn.textContent = 'Gute Wahl! 👍';
+    }
   function changeBackText() {
       btn.textContent = 'IN DEN WARENKORB';
     }
