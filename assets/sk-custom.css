@@ -532,6 +532,7 @@
   .ProductMeta__Description {
     margin-top: 50px;
     margin-left: 50px;
+    max-width: 820px;
   }
 }
 
