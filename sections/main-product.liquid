@@ -532,11 +532,14 @@
                     {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
                     <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
-                    <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
+                    <input id="textbox_id" type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
                     <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                   </div>
 
-
+<script>
+ 
+  console.log (document.getElementById('textbox_id').value);
+</script>
                     {% comment %}
                       <select class="Button" name="id">
                         {% for variant in product.variants %}
@@ -569,7 +572,6 @@
                 </div>
                 <button type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" data-action="add-to-cart"><span>In den Warenkorb</span></button>
               </div>
-              {% comment %}<button type="submit">Add To Cart</button>{% endcomment %}
             </form>
           </div>
         
