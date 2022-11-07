@@ -528,6 +528,25 @@
               <div class="quantityAtcRow">
                 <div class="sticky-atc-left">
 
+                  <div class="CartItem__QuantitySelector">
+                    <div class="QuantitySelector">
+                      {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
+      
+                      <a class="QuantitySelector__Button Link Link--primary" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_minus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_minus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_minus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
+                        {%- render 'icon' with 'minus' -%}
+                      </a>
+      
+                      <input type="text" name="updates[]" id="updates_{{ line_item.key }}" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}">
+      
+                      {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
+      
+                      <a class="QuantitySelector__Button Link Link--primary" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_plus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_plus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_plus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
+                        {%- render 'icon' with 'plus' -%}
+                      </a>
+                    </div>
+                  </div>
+
+                  {% comment %}
                   <div class="QuantitySelector QuantitySelector--large">
                     {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
@@ -536,11 +555,8 @@
                     <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                   </div>
 
-<script>
- 
-  console.log (document.getElementById('textbox_id').value);
-</script>
-                    {% comment %}
+
+                    
                       <select class="Button" name="id">
                         {% for variant in product.variants %}
                           <option value="{{variant.id}}">{{variant.title}}</option>
