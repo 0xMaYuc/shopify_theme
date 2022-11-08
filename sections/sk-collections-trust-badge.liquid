@@ -14,7 +14,75 @@
 </div>
 
 <style>
-  
+  .patternInterruptContainer {
+    background:#f4f4f4;
+    border-radius:4px
+   }
+   .patternInterruptContainer .patternInterrupt {
+    aspect-ratio:1/1;
+    text-align:center;
+    padding:0 22px;
+    position:relative
+   }
+   .patternInterruptContainer .patternInterrupt .patternImage {
+    position:absolute;
+    background:#6782a4;
+    border-radius:50%;
+    height:70px;
+    width:70px;
+    padding:7px 13px;
+    left:39%;
+    top:-36px
+   }
+   .patternInterruptContainer .patternInterrupt .patternImage img {
+    height:55px;
+    width:55px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content {
+    padding-top:54px;
+    padding-bottom:2px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content h2 {
+    font-size:20px;
+    text-transform:uppercase;
+    line-height:24px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content p {
+    font-size:16px;
+    line-height:24px
+   }
+   @media(max-width:640px) {
+    .patternInterruptContainer .patternInterrupt {
+     aspect-ratio:auto;
+     padding:0 22px 26px;
+     margin-bottom:18px
+    }
+    .patternInterruptContainer .patternInterrupt .patternImage {
+     left:42%;
+     top:-18%
+    }
+   }
+   @media (min-width:1008px) and (max-width:1239px) {
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
+     flex-direction:column;
+     display:flex;
+     padding-top:54px;
+     padding-bottom:2px;
+     justify-content:center;
+     height:90%
+    }
+   }
+   @media(min-width:1400px) {
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
+     flex-direction:column;
+     display:flex;
+     padding-top:54px;
+     padding-bottom:2px;
+     justify-content:center;
+     height:90%
+    }
+   }
+   
 </style>
 
 {% schema %}
