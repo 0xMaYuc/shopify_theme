@@ -153,11 +153,12 @@
       "type": "sk-help",
       "settings": {
         "background": "#ffffff",
-        "headline": "Eure Fragen, unsere Antworten:",
-        "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
-        "pictext": "Text",
-        "btntext": "Weitere Fragen anzeigen",
-        "helplink": ""
+        "imagesupport": "shopify:\/\/shop_images\/Kundensupport_Nude.jpg",
+        "headline": "Anja hilft dir gern weiter!",
+        "subline": "Benötigst du eine Beratung oder Hilfe bei deiner Bestellung?",
+        "pictext": "Anja - Head Of Customer Service",
+        "btntext": "Jetzt kontaktieren",
+        "helplink": "https:\/\/nudecosmetics.de\/pages\/kontakt"
       }
     },
     "sk-faq": {
@@ -165,18 +166,18 @@
       "settings": {
         "background": "#ffffff",
         "headline": "Eure Fragen, unsere Antworten:",
-        "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
+        "subline": "Wir wissen, dass Du viele Fragen zu unserem Unternehmen hast, und wir möchten sie alle beantworten. Im Folgenden haben wir die häufigsten und kritischsten Fragen zusammengestellt - wir hoffen, dass dies hilfreich ist!",
         "faqHeadline": "Die 5 kritischsten Fragen",
-        "Frage1": "Frage 1 ?",
-        "Antwort1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "Frage2": "Frage 2 ?",
-        "Antwort2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "Frage3": "Frage 3 ?",
-        "Antwort3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "Frage4": "Frage 4 ?",
-        "Antwort4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "Frage5": "Frage 5 ?",
-        "Antwort5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "Frage1": "Sind eure Produkte alle Vegan?",
+        "Antwort1": "JA! Wir verwenden ausschließlich 100% natürliche Inhaltsstoffe. Denn kein Tier darf leiden, nur weil wir uns schön fühlen wollen!",
+        "Frage2": "Gibt es häufige Nebenwirkungen bei den Produkten?",
+        "Antwort2": "Unsere Produkte werden bevor Sie auf deinem Schminktisch landen, mehrfach getestet. Hierfür haben wir eine große Community die gerne bereit ist, diese Produkte - nachdem unser Labor die Freigabe erteilt hat - zu testen. Die Produkte die Du in unserem Online Shop kaufen kannst, haben alle nötigen Tests und Laboruntersuchungen bestanden. Sodass Du dir diesbezüglich keine Sorgen machen musst. Falls Du das Produkt bestellst und es trägt doch eine Nebenwirkung auf, nehme bitte umgehend Kontakt mit uns auf, damit wir Dir dein Geld erstatten können. Wir stehen zu 100% hinter unseren Produkten, nichtsdestotrotz reagiert jede Person individuell auf bestimmte Produkte, weshalb wir Unverträglichkeiten oder Allergien nicht vollständig ausschließen können.",
+        "Frage3": "Wo werden Eure Produkte hergestellt?",
+        "Antwort3": "Uns haben schon immer Kriterien wie eine schnelle Lieferzeit und hohe Qualität angetrieben, deshalb haben wir uns bei der Herstellung Deiner Kosmetik Produkte für Deutschland entschieden. Zubehöre wie Beauty Sponges & Beauty Pinsel werden aus China importiert. Auch wenn wir aus dem Nachhaltigkeitsgedanken eine lokalere Produktion wünschenswert finden, müssen wir uns eingestehen, dass in China aktuell die höchste Kompetenz liegt, was die Produktion von Kosmetik Zubehör betrifft. Dementsprechend lassen wir in China alle Beauty Sponges & Pinsel unter höchsten Qualitätsstandards herstellen. Natürlich legen wir ein besonderes Augenmerk auf Arbeitssicherheit, faire Entlohnung und Arbeitsbedingungen. Bei der Suche nach einem geeigneten Hersteller haben wir uns am aktuellen Markt und den Produktionsstätten der führenden Konkurrenz orientiert und festgestellt, dass die Mehrheit der Kosmetik Zubehöre auf dem deutschen Markt in China produziert wird. Nach einer Kalkulation aller Faktoren (Preis, Erfahrung, Arbeitsbedingungen) sind wir zu dem Entschluss gekommen, dass im aktuellen Stadium China optimal als Produktionsstätte für unser Kosmetik Zubehör ist. Viele Gegenstände und Produkte aus unserem Alltag stammen bereits von Produktionsstandorten mit einem Sitz außerhalb der EU - egal ob Smartphone, Sneaker oder Kleidung.",
+        "Frage4": "Ist die Natural Glow Collection auch für reifere Frauen gedacht? Sieht das noch gut aus?",
+        "Antwort4": "Das größte Problem für reifere Frauen ist, dass viele Make Up Produkte einfach zu glänzend und zu intensiv sind. Ab einem bestimmten Alter möchte man sich einfach nur noch natürlich schön fühlen und nicht zu viel Produkt im Gesicht haben. Darüberhinaus hat man eben nicht mehr die Zeit sich jeden morgen stundenlang frisch zu machen. Es muss also schnell gehen und natürlich aussehen. Die Natural Glow Collection ist genau hierfür entwickelt wurden. Mit drei multifunktionalen Beauty Produkten, welche aus 1x Blush, 1x Highlighter und 1x Contourer kann man sich jeden morgen in nur 5 Minuten strahlend schön fühlen, in jungem genauso wie im schönen reifen Alter. Wenn Dir ein natürlicher Look gefällt und Du morgens einfach schneller natürlich strahlen willst, ist die Natural Glow Collection genau das richtige für Dich.",
+        "Frage5": "Warum verwendet ihr Mineral Öl als Inhaltsstoff?",
+        "Antwort5": "Anders als herkömmlichen Öle müssen bei Mineral Ölen keine giftigen Zusatzstoffe oder Pestizide verwendet werden um die Produkte haltbar und hautverträglich zu machen. Bevor Mineralöle in unsere Kosmetik gelangen, werden sie gemäß den EU-Vorschriften durch modernste Raffinierung, Extraktion und Hydrierung so bearbeitet, dass Schadstoffe vollständig eliminiert werden! Ganz im Gegenteil wird bei herkömmlichen Ölen zwar ein pflanzliches Öl verwendet, jedoch Unmengen an chemischen nicht natürlichen Zusatzstoffen und Pestiziden beigefügt, um das Produkt länger haltbar und Hautverträglich zu machen. Auf den ersten Blick wirkt das Produkt rein, jedoch wurde es durch die ganzen Zusatzstoffe so verunstaltet, dass es unserer Haut mehr schadet als Gutes tut. Unsere Passion ist es ausschließlich hochwertige 100% natürliche Inhaltsstoffe in unseren Produkten zu verwenden, die so rein sind, dass man sie auf die Haut eines Kindes auftragen kann. Hierfür gehen wir keine Kompromisse ein! Erst recht nicht bei Inhaltsstoffen!",
         "btntext": "Weitere Fragen anzeigen",
         "btnlink": "\/pages\/contact"
       }

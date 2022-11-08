@@ -57,17 +57,16 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "main-menu",
+          "primary_menu": "hauptmenu-2",
           "secondary_menu": "footer",
           "navLinkBox_Text1": "Warum NudeCosmetics?",
-          "navLinkBox_Link1": "\/pages\/contact",
+          "navLinkBox_Link1": "https:\/\/nudecosmetics.de\/pages\/warum-nudecosmetics",
           "navLinkBox_Image1": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
           "navLinkBox_Text2": "Häufige Fragen",
-          "navLinkBox_Link2": "\/pages\/contact",
+          "navLinkBox_Link2": "https:\/\/cosmeticsnude.myshopify.com\/a\/faq",
           "navLinkBox_Image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
-          "navLinkBox_Text3": "Wer sind wir?",
-          "navLinkBox_Link3": "\/pages\/contact",
-          "navLinkBox_Image3": "shopify:\/\/shop_images\/navy-blue-and-white-left-shoe.jpg",
+          "navLinkBox_Text3": "",
+          "navLinkBox_Link3": "",
           "show_social_media": false
         }
       },
