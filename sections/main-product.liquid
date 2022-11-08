@@ -606,13 +606,13 @@ OLD VERSION ONLY WITH PRICE
               visibility: visible;
               pointer-events: all;
             }
-            @media screen and (min-width: 641px) {
+            @media screen and (max-width: 641px) {
               .sticky-atc {
                 opacity: 0;
                 visibility: hidden;
               }
             }
-            @media screen and (min-width: 1008px) {
+            @media screen and (max-width: 1008px) {
               .sticky-atc {
                 opacity: 0;
                 visibility: hidden;
@@ -666,6 +666,11 @@ OLD VERSION ONLY WITH PRICE
               margin-left: 40px;
               background-color: var(--button-background);
               color: var(--button-text-color);
+            }
+            @media screen and (min-width: 1008px) {
+              #sticky-atc .ProductForm__AddToCart {
+                width: 100%;
+              }
             }
         
             #sticky-atc .quantityAtcRow select {
