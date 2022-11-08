@@ -572,6 +572,13 @@ OLD VERSION ONLY WITH PRICE
           </div>
         
           <script>
+            window.addEventListener("resize", function() {
+              if (window.matchMedia("(min-width: 641px)").matches) {
+                console.log("Screen width is at least 641px")
+              } else {
+                console.log("Screen less than 641px")
+              }
+            })
             let stickyAtc = document.getElementById("sticky-atc");
             let limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
             
