@@ -54,8 +54,8 @@
             </ul>
           {%- endif -%}
 
-
-
+         {{line_item.final_price}}
+{{line_item.original_price}}
           <!-- Preis berechnung -->
           <div class="CartItem__PriceList">
             {%- if line_item.original_price != line_item.final_price -%}
