@@ -55,7 +55,7 @@
           {%- endif -%}
 
           {%- if line_item.product.selected_or_first_available_variant.compare_at_price != "" -%}
-              compare_at_price != ""
+              {{line_item.product.selected_or_first_available_variant.compare_at_price}}
           {%- endif -%}
           <!-- Preis berechnung -->
           <div class="CartItem__PriceList">
