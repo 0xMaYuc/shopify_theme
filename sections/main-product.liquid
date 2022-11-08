@@ -574,31 +574,32 @@ OLD VERSION ONLY WITH PRICE
           <script>
             window.addEventListener("resize", function() {
               if (window.matchMedia("(min-width: 641px)").matches) {
-                console.log("Screen width is at least 641px")
+                console.log("Screen width is at least 641px");
               } else {
-                console.log("Screen less than 641px")
+                console.log("Screen less than 641px");
+                let stickyAtc = document.getElementById("sticky-atc");
+                let limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+                
+                //let triple = limit / 4;
+                let triple = limit;
+            
+                let checkIfTwenty = function() {
+                  let y = window.scrollY;
+                  if (y >= triple) {
+                    if(stickyAtc.classList.contains("sticky-atc--hidden")){
+                      stickyAtc.classList.remove("sticky-atc--hidden");
+                    }
+                  } else {
+                    if(!stickyAtc.classList.contains("sticky-atc--hidden")){
+                      stickyAtc.classList.add("sticky-atc--hidden");
+                    }
+                  }
+                };
+            
+                window.addEventListener("scroll", checkIfTwenty);
               }
             })
-            let stickyAtc = document.getElementById("sticky-atc");
-            let limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-            
-            //let triple = limit / 4;
-            let triple = limit;
-        
-            let checkIfTwenty = function() {
-              let y = window.scrollY;
-              if (y >= triple) {
-                if(stickyAtc.classList.contains("sticky-atc--hidden")){
-                  stickyAtc.classList.remove("sticky-atc--hidden");
-                }
-              } else {
-                if(!stickyAtc.classList.contains("sticky-atc--hidden")){
-                  stickyAtc.classList.add("sticky-atc--hidden");
-                }
-              }
-            };
-        
-            window.addEventListener("scroll", checkIfTwenty);
+         
           </script>
         
           <style>
