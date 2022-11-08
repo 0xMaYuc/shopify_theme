@@ -31,15 +31,6 @@
         "text": "Du bist dir unschlüssig? Keine Sorge, bei uns kannst du deine Produkte bis zu 100 Tage testen und kostenlos zurückschicken."
       }
     },
-    "da1e497b-e862-4a98-bffb-45e2d1bce645": {
-      "type": "sk-collections-trust-badge",
-      "settings": {
-        "background": "#f4f4f5",
-        "imagesupport": "shopify:\/\/shop_images\/keine-tierversuche.png",
-        "headline": "Schneller, CO2 Neutraler Versand",
-        "text": "Das beste: wir verschicken CO2 neutral mit DHL GoGreen."
-      }
-    },
     "0777dd0c-2daf-4368-b65e-499772bb65f7": {
       "type": "sk-testimonial",
       "settings": {
@@ -62,7 +53,6 @@
   "order": [
     "main",
     "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
-    "da1e497b-e862-4a98-bffb-45e2d1bce645",
     "0777dd0c-2daf-4368-b65e-499772bb65f7",
     "recently-viewed-products"
   ]
