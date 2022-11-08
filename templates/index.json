@@ -153,6 +153,7 @@
       "type": "sk-help",
       "settings": {
         "background": "#ffffff",
+        "imagesupport": "shopify:\/\/shop_images\/Kundensupport_Nude.jpg",
         "headline": "Eure Fragen, unsere Antworten:",
         "subline": "Uns ist es sehr wichtig, vorallem kritische Fragen ehrlich zu beantworten. Aus diesem Grund findest du folgend eure häufigsten und kritischsten Fragen zu unserem Unternehmen.",
         "pictext": "Text",
