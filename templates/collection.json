@@ -22,6 +22,15 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "2d6c30a7-1b6b-4217-8bab-20e0f941147f": {
+      "type": "sk-collections-trust-badge",
+      "settings": {
+        "background": "#f4f4f5",
+        "imagesupport": "shopify:\/\/shop_images\/Versand.png",
+        "headline": "Schneller, CO2 Neutraler Versand",
+        "text": "Du bist dir unschlüssig? Keine Sorge, bei uns kannst du deine Produkte bis zu 100 Tage testen und kostenlos zurückschicken."
+      }
+    },
     "0777dd0c-2daf-4368-b65e-499772bb65f7": {
       "type": "sk-testimonial",
       "settings": {
@@ -43,6 +52,7 @@
   },
   "order": [
     "main",
+    "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
     "0777dd0c-2daf-4368-b65e-499772bb65f7",
     "recently-viewed-products"
   ]
