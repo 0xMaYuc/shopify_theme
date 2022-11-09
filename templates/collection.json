@@ -1,5 +1,21 @@
 {
   "sections": {
+    "02637079-aeb1-482e-82a1-41b6d953bfff": {
+      "type": "sk-shopProperties",
+      "settings": {
+        "background": "#ddbfa6",
+        "text_color": "#ffffff",
+        "badge_color": "#ffffff",
+        "subheader_1": "",
+        "headline-1": "Schneller Versand",
+        "subheader_2": "",
+        "headline-2": "12 Monate Garantie",
+        "subheader_3": "Subline",
+        "headline-3": "Einfache Retouren",
+        "subheader_4": "",
+        "headline-4": "25.354+ glückliche Kundinnen"
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -53,6 +69,7 @@
     }
   },
   "order": [
+    "02637079-aeb1-482e-82a1-41b6d953bfff",
     "main",
     "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
     "0777dd0c-2daf-4368-b65e-499772bb65f7",
