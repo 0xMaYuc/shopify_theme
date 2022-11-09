@@ -63,6 +63,7 @@
     },
     "2d6c30a7-1b6b-4217-8bab-20e0f941147f": {
       "type": "sk-collections-trust-badge",
+      "disabled": true,
       "settings": {
         "background": "#f4f4f4",
         "imagesupport": "shopify:\/\/shop_images\/cruelty-free_680c27b2-2de8-4add-9d47-eb4c33f4a34f.png",
