@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "sk-customerCount": {
+      "type": "sk-customerCount",
+      "settings": {
+        "background": "#f4f4f5",
+        "imagesupport": "shopify:\/\/shop_images\/1.CONTOURINGVertiefedeineWangenknochenmitdemSEPIASTICKfuereinestrahlendfrischeKakaobronze._1080x1350px.jpg",
+        "textName": "Emma K.",
+        "textUnd": "und",
+        "textAnzahl": "25.354+ andere Kundinnen",
+        "TextAbschluss": "lieben unsere Produkte!"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": true,
+            "show_taxes_included": true
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "8ccaa234-27f6-42de-8b4b-601d1d696a79": {
+          "type": "content",
+          "settings": {
+            "title": "{{ product.metafields.custom.tab_1_title.value }}",
+            "content": "<p>{{ product.metafields.custom.tab_1_content | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394": {
+          "type": "content",
+          "settings": {
+            "title": "Anwendung Tab",
+            "content": "",
+            "page": "anwendung-2"
+          }
+        },
+        "f0ff2d82-4d29-4dab-8e63-a8a21685e2b5": {
+          "type": "content",
+          "settings": {
+            "title": "",
+            "content": "",
+            "page": "versand-rucksendung"
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "description",
+        "quantity_selector",
+        "buy_buttons",
+        "8ccaa234-27f6-42de-8b4b-601d1d696a79",
+        "6084f4b3-1d42-4b88-9a4c-2e10cdf2b394",
+        "f0ff2d82-4d29-4dab-8e63-a8a21685e2b5"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Könnte dir auch gefallen",
+        "recommendations_count": 4,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "sk-customerCount",
+    "main",
+    "loox-product-reviews-app-section",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}
