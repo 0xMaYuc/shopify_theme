@@ -16,6 +16,15 @@
         "headline-4": "25.354+ glückliche Kundinnen"
       }
     },
+    "0777dd0c-2daf-4368-b65e-499772bb65f7": {
+      "type": "sk-testimonial",
+      "settings": {
+        "background": "#ffffff",
+        "testimonialText": "Die Produkte sind sehr gut. Das Auftragen auf die Haut macht sich super, ein frisches Aussehen ist das Ergebnis!",
+        "imagesupport": "shopify:\/\/shop_images\/Screenshot_at_Nov_09_20-32-37.png",
+        "testimonialName": "Ayten D."
+      }
+    },
     "24e927e8-da0b-4aed-b942-dfb688829b57": {
       "type": "sk-benefits",
       "disabled": true,
@@ -72,71 +81,25 @@
         "text": "Du bist dir unschlüssig? Keine Sorge, bei uns kannst du deine Produkte bis zu 100 Tage testen und kostenlos zurückschicken."
       }
     },
-    "0777dd0c-2daf-4368-b65e-499772bb65f7": {
-      "type": "sk-testimonial",
-      "settings": {
-        "background": "#ffffff",
-        "testimonialText": "Die Produkte sind sehr gut. Das Auftragen auf die Haut macht sich super, ein frisches Aussehen ist das Ergebnis!",
-        "imagesupport": "shopify:\/\/shop_images\/Screenshot_at_Nov_09_20-32-37.png",
-        "testimonialName": "Ayten D."
-      }
-    },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
-      "disabled": true,
-      "settings": {
-        "title": "Zuletzt angesehen",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
-      }
-    },
-    "cf176802-92a4-409f-ae3d-d09ecd9155cf": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16176604217608__cf176802-92a4-409f-ae3d-d09ecd9155cf-166826523148ec86e6-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "template--16176604217608__cf176802-92a4-409f-ae3d-d09ecd9155cf-166826523148ec86e6-0"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "66e11a97-9ff1-4bbc-8ae0-a299b6f34d8f": {
       "type": "sk-help",
       "settings": {
         "background": "#ffffff",
-        "headline": "Headline",
-        "subline": "Subline",
-        "pictext": "Text",
-        "btntext": "Text",
-        "helplink": "mailto:hallo@fundw.net"
+        "imagesupport": "shopify:\/\/shop_images\/Kundensupport_Nude.jpg",
+        "headline": "Anja hilft dir gern weiter!",
+        "subline": "Benötigst du eine Beratung oder Hilfe bei deiner Bestellung?",
+        "pictext": "Anja - Head Of CustomerService",
+        "btntext": "JETZT KONTAKTIEREN",
+        "helplink": ""
       }
     }
   },
   "order": [
     "02637079-aeb1-482e-82a1-41b6d953bfff",
+    "0777dd0c-2daf-4368-b65e-499772bb65f7",
     "24e927e8-da0b-4aed-b942-dfb688829b57",
     "main",
     "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
-    "0777dd0c-2daf-4368-b65e-499772bb65f7",
-    "recently-viewed-products",
-    "cf176802-92a4-409f-ae3d-d09ecd9155cf",
     "66e11a97-9ff1-4bbc-8ae0-a299b6f34d8f"
   ]
 }
