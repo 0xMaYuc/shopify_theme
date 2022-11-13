@@ -4,7 +4,7 @@
       <div class="sk-customerReview__Header">
         <h3 class="Heading">{{ section.settings.headline }}</h3>
         <h5 class="Heading">{{ section.settings.subline }}</h5>
-        <a style="font-size: 14px; text-decoration: underline;" href="/pages/abgabe-bewertung">
+        <a style="font-size: 14px; text-decoration: underline;" href="{{section.settings.helplink | url}}">
           {{ section.settings.subline2 }}
         </a>
       </div>
@@ -122,6 +122,12 @@
       "id": "subline",
       "label": "Subline",
       "default": "Unsere Kunden haben eine klare Meinung über uns!"
+    },
+    {
+      "type": "text",
+      "id": "helplink",
+      "label": "Link URL fuer Button",
+      "default": "\/pages/abgabe-bewertung"
     },
     {
       "type": "text",
