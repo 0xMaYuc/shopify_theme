@@ -9,34 +9,22 @@
         "subheader_1": "",
         "headline-1": "Schneller Versand",
         "subheader_2": "",
-        "headline-2": "12 Monate Garantie",
-        "subheader_3": "Subline",
-        "headline-3": "Einfache Retouren",
+        "headline-2": "Einfache Retouren",
+        "subheader_3": "",
+        "headline-3": "12 Monate Garantie",
         "subheader_4": "",
         "headline-4": "25.354+ glückliche Kundinnen"
       }
     },
-    "24e927e8-da0b-4aed-b942-dfb688829b57": {
-      "type": "sk-benefits",
+    "bb145b58-5e04-4e58-9df6-159627062d3a": {
+      "type": "sk-customerCount",
       "settings": {
-        "background": "#ffffff",
-        "headline": "",
-        "subline": "",
-        "pictext": "",
-        "imagesupport1": "shopify:\/\/shop_images\/cruelty-free.png",
-        "headline1": "100% Tierversuchsfrei",
-        "text1": "Unser Anspruch ist es, all unsere Kosmetikprodukte zu 100% tierversuchsfrei herzustellen. Deshalb unterstützt Du mit jedem Kauf bei NUDE Cosmetics den Kampf gegen Tierversuche.",
-        "imagesupport2": "shopify:\/\/shop_images\/germany_1.png",
-        "headline2": "Made in Germany",
-        "text2": "Uns haben schon immer Kriterien wie eine schnelle Lieferzeit und hohe Qualität angetrieben, deshalb haben wir uns bei NUDE Cosmetics bei der Herstellung Deiner Produkte für Deutschland entschieden.",
-        "imagesupport3": "shopify:\/\/shop_images\/vegetarian.png",
-        "headline3": "Vegan & Cruelty Free",
-        "text3": "Dein Produkt wurde von uns aus veganen, haltungsfreundlichen Bestandsteilen sorgfältig ausgewählt, für dich dermatologisch getestet und zertifiziert.",
-        "imagesupport4": "shopify:\/\/shop_images\/planet-erde_1.png",
-        "headline4": "100% Natürlich",
-        "text4": "Wir produzieren zu 100% natürlich, somit behandeln wir das Thema bewusst, statt willkürlich. Dank unserer umweltschützenden Produktionsweise schützt Du unsere Erde nachhaltig, denn wir haben nur Eine.",
-        "btntext": "",
-        "helplink": ""
+        "background": "#f4f4f5",
+        "imagesupport": "shopify:\/\/shop_images\/Screenshot_at_Nov_09_20-32-37.png",
+        "textName": "Emma K.",
+        "textUnd": "und",
+        "textAnzahl": "25.354+ andere Kundinnen",
+        "TextAbschluss": "lieben unsere Produkte!"
       }
     },
     "main": {
@@ -61,15 +49,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "2d6c30a7-1b6b-4217-8bab-20e0f941147f": {
-      "type": "sk-collections-trust-badge",
-      "settings": {
-        "background": "#f4f4f4",
-        "imagesupport": "shopify:\/\/shop_images\/cruelty-free_680c27b2-2de8-4add-9d47-eb4c33f4a34f.png",
-        "headline": "100 Tage testen",
-        "text": "Du bist dir unschlüssig? Keine Sorge, bei uns kannst du deine Produkte bis zu 100 Tage testen und kostenlos zurückschicken."
-      }
-    },
     "0777dd0c-2daf-4368-b65e-499772bb65f7": {
       "type": "sk-testimonial",
       "settings": {
@@ -79,23 +58,60 @@
         "testimonialName": "Ayten D."
       }
     },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
+    "24e927e8-da0b-4aed-b942-dfb688829b57": {
+      "type": "sk-benefits",
       "disabled": true,
       "settings": {
-        "title": "Zuletzt angesehen",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
+        "background": "#ffffff",
+        "headline": "",
+        "subline": "",
+        "pictext": "",
+        "imagesupport1": "shopify:\/\/shop_images\/cruelty-free.png",
+        "headline1": "100% Tierversuchsfrei",
+        "text1": "Unser Anspruch ist es, all unsere Kosmetikprodukte zu 100% tierversuchsfrei herzustellen. Deshalb unterstützt Du mit jedem Kauf bei NUDE Cosmetics den Kampf gegen Tierversuche.",
+        "imagesupport2": "shopify:\/\/shop_images\/germany_1.png",
+        "headline2": "Made in Germany",
+        "text2": "Uns haben schon immer Kriterien wie eine schnelle Lieferzeit und hohe Qualität angetrieben, deshalb haben wir uns bei NUDE Cosmetics bei der Herstellung Deiner Produkte für Deutschland entschieden.",
+        "imagesupport3": "shopify:\/\/shop_images\/vegetarian.png",
+        "headline3": "Vegan & Cruelty Free",
+        "text3": "Dein Produkt wurde von uns aus veganen, haltungsfreundlichen Bestandsteilen sorgfältig ausgewählt, für dich dermatologisch getestet und zertifiziert.",
+        "imagesupport4": "shopify:\/\/shop_images\/planet-erde_1.png",
+        "headline4": "100% Natürlich",
+        "text4": "Wir produzieren zu 100% natürlich, somit behandeln wir das Thema bewusst, statt willkürlich. Dank unserer umweltschützenden Produktionsweise schützt Du unsere Erde nachhaltig, denn wir haben nur Eine.",
+        "btntext": "",
+        "helplink": ""
+      }
+    },
+    "2d6c30a7-1b6b-4217-8bab-20e0f941147f": {
+      "type": "sk-collections-trust-badge",
+      "disabled": true,
+      "settings": {
+        "background": "#f4f4f4",
+        "imagesupport": "shopify:\/\/shop_images\/cruelty-free_680c27b2-2de8-4add-9d47-eb4c33f4a34f.png",
+        "headline": "100 Tage testen",
+        "text": "Du bist dir unschlüssig? Keine Sorge, bei uns kannst du deine Produkte bis zu 100 Tage testen und kostenlos zurückschicken."
+      }
+    },
+    "66e11a97-9ff1-4bbc-8ae0-a299b6f34d8f": {
+      "type": "sk-help",
+      "settings": {
+        "background": "#ffffff",
+        "imagesupport": "shopify:\/\/shop_images\/Kundensupport_Nude.jpg",
+        "headline": "Anja hilft dir gern weiter!",
+        "subline": "Benötigst du eine Beratung oder Hilfe bei deiner Bestellung?",
+        "pictext": "Anja - Head Of Customer Service",
+        "btntext": "JETZT KONTAKTIEREN",
+        "helplink": "https:\/\/nudecosmetics.de\/pages\/kontakt"
       }
     }
   },
   "order": [
     "02637079-aeb1-482e-82a1-41b6d953bfff",
-    "24e927e8-da0b-4aed-b942-dfb688829b57",
+    "bb145b58-5e04-4e58-9df6-159627062d3a",
     "main",
-    "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
     "0777dd0c-2daf-4368-b65e-499772bb65f7",
-    "recently-viewed-products"
+    "24e927e8-da0b-4aed-b942-dfb688829b57",
+    "2d6c30a7-1b6b-4217-8bab-20e0f941147f",
+    "66e11a97-9ff1-4bbc-8ae0-a299b6f34d8f"
   ]
 }
