@@ -299,7 +299,7 @@
   height: 100px;
   object-fit: contain;
   object-position: center;
-  width: 100px;
+  width: 80px;
 }
 @media (min-width: 479px) and (max-width: 991px) {
   .section-icons .section-icons__icon {
