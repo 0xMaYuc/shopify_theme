@@ -296,9 +296,9 @@
   }
 }
 .section-icons .section-icons__icon {
-  height: 100px;
   object-fit: contain;
   object-position: center;
+  height: 80px;
   width: 80px;
 }
 @media (min-width: 479px) and (max-width: 991px) {
