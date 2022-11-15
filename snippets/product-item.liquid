@@ -87,10 +87,6 @@
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url }}">{{ product.title }}</a>
         </h2>
-{% comment %}Start automatically added Judge.me widget{% endcomment %}
-  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
-{% comment %}End automatically added Judge.me widget{% endcomment %}
-
 
         {%- if settings.show_product_rating -%}
           {%- unless use_horizontal -%}
